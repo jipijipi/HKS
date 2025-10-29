@@ -42,11 +42,12 @@ a {
 
 .hero {
   position: relative;
-  min-height: 80vh;
-  display: grid;
-  place-items: center;
+  min-height: 85vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
   text-align: center;
-  padding: 3rem 0;
+  padding: 6rem 0 4rem;
   color: white;
 }
 
@@ -54,9 +55,9 @@ a {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(15, 31, 61, 0.75), rgba(15, 31, 61, 0.85)),
+  background: linear-gradient(0deg, rgba(15, 31, 61, 0.85), rgba(15, 31, 61, 0.35) 40%, rgba(15, 31, 61, 0.6)),
     url("{{ '/photos/facade.JPG' | relative_url }}") center/cover no-repeat;
-  filter: saturate(1.1);
+  filter: saturate(1.18);
   z-index: -2;
 }
 
@@ -64,12 +65,17 @@ a {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(15, 31, 61, 0.4);
+  background: linear-gradient(180deg, rgba(15, 31, 61, 0.05), rgba(15, 31, 61, 0.75));
   z-index: -1;
 }
 
 .hero__inner {
   width: min(90%, 720px);
+  backdrop-filter: blur(4px);
+  background: rgba(15, 31, 61, 0.3);
+  padding: 2.75rem 2.5rem;
+  border-radius: 22px;
+  box-shadow: 0 25px 55px rgba(15, 31, 61, 0.32);
 }
 
 .eyebrow {
@@ -146,6 +152,51 @@ a {
 .section__subtitle {
   font-size: 1rem;
   color: rgba(40, 50, 63, 0.72);
+}
+
+.stats {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.stat {
+  position: relative;
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(15, 31, 61, 0.1);
+}
+
+.stat::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(185, 144, 68, 0.18), transparent 60%);
+  pointer-events: none;
+}
+
+.stat__value {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.75rem, 6vw, 3.5rem);
+  font-weight: 700;
+  margin: 0;
+  color: $accent;
+}
+
+.stat__label {
+  margin: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  color: rgba(40, 50, 63, 0.6);
+}
+
+.stat__description {
+  margin-top: 1rem;
+  font-size: 0.95rem;
 }
 
 .grid {
@@ -228,6 +279,65 @@ a {
   border: 0;
 }
 
+.plan-gallery {
+  display: grid;
+  gap: 1.5rem;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(260px, 320px);
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scroll-snap-type: x mandatory;
+}
+
+.plan-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 18px;
+  padding: 1.8rem;
+  box-shadow: 0 20px 45px rgba(15, 31, 61, 0.08);
+  scroll-snap-align: start;
+  display: grid;
+  gap: 1rem;
+}
+
+.plan-card__tag {
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(15, 31, 61, 0.55);
+}
+
+.plan-card__title {
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  font-size: 1.35rem;
+  color: $primary;
+}
+
+.plan-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: $accent;
+}
+
+.plan-card__note {
+  font-size: 0.85rem;
+  color: rgba(40, 50, 63, 0.6);
+}
+
+.plan-card__preview {
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  border: 1px dashed rgba(15, 31, 61, 0.2);
+  display: grid;
+  place-items: center;
+  font-size: 0.9rem;
+  color: rgba(40, 50, 63, 0.55);
+  background: linear-gradient(135deg, rgba(248, 244, 239, 0.8), rgba(255, 255, 255, 0.9));
+}
+
 .contact {
   display: grid;
   gap: 2rem;
@@ -282,6 +392,7 @@ textarea:focus {
 @media (max-width: 640px) {
   .hero {
     min-height: 70vh;
+    padding: 4.5rem 0 3.5rem;
   }
 
   .section {

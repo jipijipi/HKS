@@ -43,18 +43,21 @@ title: Rue des Courlis — Casablanca
     <h2 class="section__title">Mix programmatique</h2>
     <p class="section__subtitle">Des espaces pensés pour la flexibilité et la rentabilité, tous dotés d’une identité Art Déco assumée.</p>
   </div>
-  <div class="grid grid--3">
-    <article class="card">
-      <h3 class="card__title">14 appartements meublés</h3>
-      <p class="card__meta">Studios et 2 pièces entièrement équipés avec cuisines intégrées, climatisation individualisée et parking dédié.</p>
+  <div class="stats">
+    <article class="stat">
+      <p class="stat__value">14</p>
+      <p class="stat__label">Appartements meublés</p>
+      <p class="stat__description">Studios & 2 pièces livrés clé en main, cuisines équipées, climatisation individualisée, parking réservé.</p>
     </article>
-    <article class="card">
-      <h3 class="card__title">5 plateaux de bureaux</h3>
-      <p class="card__meta">Entrée indépendante, contrôle d’accès électronique, possibilité de connexion avec les commerces mitoyens.</p>
+    <article class="stat">
+      <p class="stat__value">5</p>
+      <p class="stat__label">Plateaux de bureaux</p>
+      <p class="stat__description">Entrée indépendante, contrôle d’accès électronique, flexibilité d’aménagement pour équipes agiles.</p>
     </article>
-    <article class="card">
-      <h3 class="card__title">2 locaux commerciaux</h3>
-      <p class="card__meta">Façades vitrées sur rue, fort passage piéton et automobiliste, liaison optionnelle vers les bureaux voisins.</p>
+    <article class="stat">
+      <p class="stat__value">2</p>
+      <p class="stat__label">Locaux commerciaux</p>
+      <p class="stat__description">Vitrines sur rue à fort passage, liaison optionnelle vers les bureaux mitoyens pour formats showroom.</p>
     </article>
   </div>
 </section>
@@ -69,7 +72,37 @@ title: Rue des Courlis — Casablanca
     <p>
       <a class="btn btn--primary" href="{{ '/plans/plan-autorise.pdf' | relative_url }}" target="_blank" rel="noopener">Ouvrir le plan</a>
     </p>
-    <p>Prochainement&nbsp;: plans détaillés par type d’appartement et fiches d’ameublement à télécharger.</p>
+    <p>Prochainement&nbsp;: plans détaillés par typologie et fiches d’ameublement à télécharger individuellement.</p>
+  </div>
+  <div class="plan-gallery">
+    <article class="plan-card">
+      <span class="plan-card__tag">Résidentiel</span>
+      <h3 class="plan-card__title">Appartement meublé type A</h3>
+      <div class="plan-card__preview">Aperçu plan à intégrer</div>
+      <a class="plan-card__cta" href="{{ '/plans/plan-autorise.pdf' | relative_url }}" target="_blank" rel="noopener">Télécharger le PDF complet</a>
+      <p class="plan-card__note">Vous souhaitez ce plan en haute définition&nbsp;? <a href="mailto:sicorep.imo@gmail.com?subject=Plan%20Type%20A">Demandez-le par email</a>.</p>
+    </article>
+    <article class="plan-card">
+      <span class="plan-card__tag">Résidentiel</span>
+      <h3 class="plan-card__title">Appartement meublé type B</h3>
+      <div class="plan-card__preview">Aperçu plan à intégrer</div>
+      <a class="plan-card__cta" href="{{ '/plans/plan-autorise.pdf' | relative_url }}" target="_blank" rel="noopener">Télécharger le PDF complet</a>
+      <p class="plan-card__note">Version individuelle à venir — partagez vos besoins spécifiques pour prioriser.</p>
+    </article>
+    <article class="plan-card">
+      <span class="plan-card__tag">Bureaux</span>
+      <h3 class="plan-card__title">Plateau bureau modulable</h3>
+      <div class="plan-card__preview">Aperçu plan à intégrer</div>
+      <a class="plan-card__cta" href="{{ '/plans/plan-autorise.pdf' | relative_url }}" target="_blank" rel="noopener">Télécharger le PDF complet</a>
+      <p class="plan-card__note">Option de liaison verticale avec les commerces — précisez-le dans votre demande.</p>
+    </article>
+    <article class="plan-card">
+      <span class="plan-card__tag">Retail</span>
+      <h3 class="plan-card__title">Local commercial RDC</h3>
+      <div class="plan-card__preview">Aperçu plan à intégrer</div>
+      <a class="plan-card__cta" href="{{ '/plans/plan-autorise.pdf' | relative_url }}" target="_blank" rel="noopener">Télécharger le PDF complet</a>
+      <p class="plan-card__note">Envie d’une visite virtuelle ou 3D&nbsp;? <a href="mailto:sicorep.imo@gmail.com?subject=Local%20Commercial%20Rue%20des%20Courlis">Contactez-nous</a>.</p>
+    </article>
   </div>
 </section>
 
