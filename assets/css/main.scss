@@ -568,3 +568,17 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 }
+.plans-illustration {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 2.5rem;
+}
+
+.plans-illustration img {
+  width: min(100%, 820px);
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 24px;
+  padding: 2rem 3rem;
+  box-shadow: 0 40px 70px rgba(15, 31, 61, 0.12);
+  border: 1px solid rgba(185, 144, 68, 0.18);
+}
