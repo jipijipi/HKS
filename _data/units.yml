@@ -20,7 +20,8 @@ units:
       - Suite parentale
       - Balcon filant
     note: Plan HD sur demande — idéal pour couple actif.
-    plan_url: "/plans/plan-autorise.pdf"
+    plan_url: "/plans/APTA.pdf"
+    preview: "/plans/2x/APTA@2x.png"
   - name: Appartement Type B
     category: residences
     surface: "74 m²"
@@ -29,7 +30,8 @@ units:
       - Cuisine semi-ouverte
       - Buanderie séparée
     note: Fiche d’ameublement en préparation.
-    plan_url: "/plans/plan-autorise.pdf"
+    plan_url: "/plans/APTB.pdf"
+    preview: "/plans/2x/APTB@2x.png"
   - name: Appartement Type C
     category: residences
     surface: "80 m²"
@@ -38,7 +40,8 @@ units:
       - Dressing intégré
       - Option twin suite
     note: Possibilité d’aménagement sur-mesure.
-    plan_url: "/plans/plan-autorise.pdf"
+    plan_url: "/plans/APTC.pdf"
+    preview: "/plans/2x/APTC@2x.png"
   - name: Appartement Type D
     category: residences
     surface: "86 m²"
@@ -47,7 +50,8 @@ units:
       - Terrasses jumelles
       - Cellier privatif
     note: Idéal coliving exécutif.
-    plan_url: "/plans/plan-autorise.pdf"
+    plan_url: "/plans/APTD.pdf"
+    preview: "/plans/2x/APTD@2x.png"
   - name: Appartement Type E
     category: residences
     surface: "90 m²"
@@ -56,7 +60,8 @@ units:
       - Cuisine fermée équipée
       - Rangements sur-mesure
     note: Livraison avec pack mobilier premium.
-    plan_url: "/plans/plan-autorise.pdf"
+    plan_url: "/plans/APTE.pdf"
+    preview: "/plans/2x/APTE@2x.png"
   - name: Appartement Type F
     category: residences
     surface: "95 m²"
@@ -65,7 +70,8 @@ units:
       - Espace bureau intégré
       - Terrasse arborée
     note: Conversion éventuelle en duplex (sur demande).
-    plan_url: "/plans/plan-autorise.pdf"
+    plan_url: "/plans/APTF.pdf"
+    preview: "/plans/2x/APTF@2x.png"
   - name: Studio Urbain S1
     category: studios
     surface: "32 m²"
@@ -74,7 +80,8 @@ units:
       - Meuble lit escamotable
       - Vue boulevard
     note: Pack location courte durée disponible.
-    plan_url: "/plans/plan-autorise.pdf"
+    plan_url: "/plans/STUA.pdf"
+    preview: "/plans/2x/STUA@2x.png"
   - name: Studio Signature S2
     category: studios
     surface: "36 m²"
@@ -83,7 +90,8 @@ units:
       - Dressing modulaire
       - Terrasse privative
     note: Compatible offre corporate housing.
-    plan_url: "/plans/plan-autorise.pdf"
+    plan_url: "/plans/STUB.pdf"
+    preview: "/plans/2x/STUB@2x.png"
   - name: Plateau bureau 01
     category: offices
     surface: "95 m²"

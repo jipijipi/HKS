@@ -1,23 +1,73 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const filters = document.querySelectorAll("[data-unit-filter]");
-  const panels = document.querySelectorAll("[data-unit-panel]");
+  const browsers = document.querySelectorAll("[data-unit-browser]");
 
-  if (!filters.length) return;
+  if (!browsers.length) return;
 
-  filters.forEach((filter) => {
-    filter.addEventListener("click", () => {
-      const id = filter.getAttribute("data-unit-filter");
+  browsers.forEach((browser) => {
+    const categoryButtons = browser.querySelectorAll("[data-unit-category]");
+    const panels = browser.querySelectorAll("[data-unit-panel]");
+    const unitChips = browser.querySelectorAll("[data-unit-chip]");
+    const unitCards = browser.querySelectorAll("[data-unit-card]");
 
-      filters.forEach((btn) => {
-        const active = btn === filter;
-        btn.classList.toggle("is-active", active);
-        btn.setAttribute("aria-selected", active ? "true" : "false");
-        btn.setAttribute("tabindex", active ? "0" : "-1");
+    const activateUnit = (categoryId, unitId) => {
+      const chips = browser.querySelectorAll(`[data-unit-chip][data-category="${categoryId}"]`);
+      chips.forEach((chip) => {
+        const isActive = chip.dataset.unit === unitId;
+        chip.classList.toggle("is-active", isActive);
+        chip.setAttribute("aria-selected", isActive ? "true" : "false");
+        chip.setAttribute("tabindex", isActive ? "0" : "-1");
+      });
+
+      unitCards.forEach((card) => {
+        const isActive = card.dataset.category === categoryId && card.dataset.unit === unitId;
+        card.classList.toggle("is-active", isActive);
+        card.setAttribute("aria-hidden", isActive ? "false" : "true");
+        card.setAttribute("tabindex", isActive ? "0" : "-1");
+      });
+    };
+
+    const activateCategory = (categoryId) => {
+      categoryButtons.forEach((btn) => {
+        const isActive = btn.dataset.unitCategory === categoryId;
+        btn.classList.toggle("is-active", isActive);
+        btn.setAttribute("aria-selected", isActive ? "true" : "false");
+        btn.setAttribute("tabindex", isActive ? "0" : "-1");
       });
 
       panels.forEach((panel) => {
-        panel.classList.toggle("is-active", panel.getAttribute("data-unit-panel") === id);
+        const isActive = panel.dataset.unitPanel === categoryId;
+        panel.classList.toggle("is-active", isActive);
+      });
+
+      const firstChip = browser.querySelector(`[data-unit-chip][data-category="${categoryId}"]`);
+      if (firstChip) {
+        activateUnit(categoryId, firstChip.dataset.unit);
+      } else {
+        unitCards.forEach((card) => card.classList.remove("is-active"));
+      }
+    };
+
+    categoryButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        activateCategory(btn.dataset.unitCategory);
       });
     });
+
+    unitChips.forEach((chip) => {
+      chip.addEventListener("click", () => {
+        const categoryId = chip.dataset.category;
+        const unitId = chip.dataset.unit;
+        const panel = browser.querySelector(`[data-unit-panel="${categoryId}"]`);
+        if (panel && !panel.classList.contains("is-active")) {
+          activateCategory(categoryId);
+        } else {
+          activateUnit(categoryId, unitId);
+        }
+      });
+    });
+
+    if (categoryButtons.length) {
+      activateCategory(categoryButtons[0].dataset.unitCategory);
+    }
   });
 });
