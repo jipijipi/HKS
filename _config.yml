@@ -1,0 +1,19 @@
+title: "Rue des Courlis"
+baseurl: ""
+url: ""
+lang: fr
+description: "Résidences meublées, bureaux et commerces au cœur de Casablanca."
+collections:
+  pages:
+    output: true
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+plugins:
+  - jekyll-seo-tag
+markdown: kramdown
+sass:
+  style: compressed
+permalink: pretty

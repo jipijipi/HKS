@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'fr' }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+    {% seo %}
+  </head>
+  <body>
+    <main class="page">
+      {{ content }}
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p class="footer__brand">© {{ site.title }} — Casablanca, Maroc</p>
+        <p class="footer__links">
+          <a href="mailto:sicorep.imo@gmail.com" class="link">sicorep.imo@gmail.com</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
