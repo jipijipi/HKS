@@ -41,6 +41,17 @@ a {
   text-decoration: none;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -89,6 +100,18 @@ a {
   padding: 2.75rem 2.5rem;
   border-radius: 22px;
   box-shadow: 0 25px 55px rgba(15, 31, 61, 0.32);
+}
+
+.hero__mark {
+  margin: 0 auto 1.5rem;
+  width: 120px;
+}
+
+.hero__mark img {
+  width: 100%;
+  display: block;
+  filter: invert(1) brightness(2) contrast(1.2);
+  opacity: 0.85;
 }
 
 .eyebrow {
@@ -576,9 +599,12 @@ textarea:focus {
 
 .plans-illustration img {
   width: min(100%, 820px);
-  background: rgba(255, 255, 255, 0.75);
-  border-radius: 24px;
-  padding: 2rem 3rem;
-  box-shadow: 0 40px 70px rgba(15, 31, 61, 0.12);
-  border: 1px solid rgba(185, 144, 68, 0.18);
+  display: block;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  border: none;
+  opacity: 0.6;
+  filter: invert(1) brightness(0.2) contrast(1.35);
+  mix-blend-mode: multiply;
 }

@@ -14,21 +14,27 @@
     </p>
   </div>
   <div>
-    <form action="https://formspree.io/f/your-id" method="POST" class="card">
+    <form action="https://api.web3forms.com/submit" method="POST" class="card">
+      <input type="hidden" name="access_key" value="88cd8887-bf7e-4aeb-a6bd-b9e541b6d2fb" />
+      <input type="hidden" name="subject" value="Nouvelle demande — Résidence Courlis" />
       <label>
         Nom complet<br />
         <input type="text" name="name" required />
       </label>
       <label>
         Email<br />
-        <input type="email" name="_replyto" required />
+        <input type="email" name="email" required />
       </label>
       <label>
         Message<br />
         <textarea name="message" rows="4" required></textarea>
       </label>
+      <label class="sr-only">
+        Ne pas remplir<br />
+        <input type="text" name="botcheck" tabindex="-1" autocomplete="off" />
+      </label>
       <button class="btn btn--primary" type="submit">Envoyer</button>
-      <p class="card__meta">Formulaire propulsé par Formspree — mettez à jour l’identifiant une fois le compte créé.</p>
+      <p class="card__meta">Formulaire propulsé par Web3Forms — mettez à jour les notifications depuis votre tableau de bord.</p>
     </form>
   </div>
 </section>
