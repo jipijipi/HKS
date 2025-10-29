@@ -1,0 +1,14 @@
+<section class="section container">
+  <div class="section__header">
+    <h2 class="section__title">{{ site.data.advantages.title }}</h2>
+    <p class="section__subtitle">{{ site.data.advantages.subtitle }}</p>
+  </div>
+  <div class="grid grid--3">
+    {% for item in site.data.advantages.items %}
+      <article class="card">
+        <h3 class="card__title">{{ item.title }}</h3>
+        <p class="card__meta">{{ item.copy }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>

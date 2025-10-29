@@ -1,0 +1,62 @@
+<section class="section container">
+  <div class="section__header">
+    <h2 class="section__title">Plans & documents</h2>
+    <p class="section__subtitle">Explorez chaque typologie et récupérez les plans détaillés en un clic.</p>
+  </div>
+  <div class="card">
+    <p><strong>Plan autorisé complet</strong> — PDF haute résolution incluant résidences, bureaux et commerces.</p>
+    <p>
+      <a class="btn btn--primary" href="{{ '/plans/plan-autorise.pdf' | relative_url }}" target="_blank" rel="noopener">Ouvrir le plan</a>
+    </p>
+    <p>Plans dédiés par typologie en cours de finalisation — prévenez-nous si vous souhaitez une priorité.</p>
+  </div>
+  <div class="unit-browser">
+    <div class="unit-browser__filters" role="tablist">
+      {% assign categories = site.data.units.categories %}
+      {% for category in categories %}
+        <button
+          class="unit-browser__filter{% if forloop.first %} is-active{% endif %}"
+          data-unit-filter="{{ category.id }}"
+          role="tab"
+          aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+        >
+          <span class="unit-browser__filter-label">{{ category.label }}</span>
+          <span class="unit-browser__filter-meta">{{ category.description }}</span>
+        </button>
+      {% endfor %}
+    </div>
+    {% for category in categories %}
+      <div
+        class="unit-browser__panel{% if forloop.first %} is-active{% endif %}"
+        data-unit-panel="{{ category.id }}"
+        role="tabpanel"
+      >
+        <div class="plan-gallery">
+          {% for unit in site.data.units.units %}
+            {% if unit.category == category.id %}
+              <article class="plan-card">
+                <span class="plan-card__tag">{{ category.label }}</span>
+                <h3 class="plan-card__title">{{ unit.name }}</h3>
+                <div class="plan-card__metrics">
+                  <span class="plan-card__metric plan-card__metric--surface">{{ unit.surface }}</span>
+                  {% if unit.highlights %}
+                    <ul class="plan-card__highlights">
+                      {% for item in unit.highlights %}
+                        <li>{{ item }}</li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
+                </div>
+                <div class="plan-card__preview">Aperçu plan à intégrer</div>
+                <a class="plan-card__cta" href="{{ unit.plan_url | relative_url }}" target="_blank" rel="noopener">Voir le plan PDF</a>
+                {% if unit.note %}
+                  <p class="plan-card__note">{{ unit.note }}</p>
+                {% endif %}
+              </article>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>

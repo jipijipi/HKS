@@ -1,0 +1,15 @@
+<section class="section container">
+  <div class="section__header">
+    <h2 class="section__title">{{ site.data.program.title }}</h2>
+    <p class="section__subtitle">{{ site.data.program.subtitle }}</p>
+  </div>
+  <div class="stats">
+    {% for stat in site.data.program.stats %}
+      <article class="stat">
+        <p class="stat__value">{{ stat.value }}</p>
+        <p class="stat__label">{{ stat.label }}</p>
+        <p class="stat__description">{{ stat.description }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>

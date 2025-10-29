@@ -1,0 +1,14 @@
+<section class="hero">
+  <div class="hero__inner">
+    <p class="eyebrow">{{ site.data.hero.eyebrow }}</p>
+    <h1 class="hero__title">{{ site.data.hero.title }}</h1>
+    <p class="hero__subtitle">
+      {{ site.data.hero.subtitle }}
+    </p>
+    <div class="cta-group">
+      {% for cta in site.data.hero.ctas %}
+        <a class="btn {{ cta.style }}" href="{{ cta.href }}" {% if cta.external %}target="_blank" rel="noopener"{% endif %}>{{ cta.label }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,6 +1,6 @@
 
 Rue des courlis 
-Quartier riviera (habitations, residentiel, tranquile)
+Quartier riviera-oasis (habitations, residentiel, tranquile)
 Proximité quartier affaire cfc / Anfa park 
 Proximité des grands axes (direction aeroport,...)
 
@@ -39,3 +39,5 @@ next :
 
 eau + elec dans charges
 meublé a la demande
+
+1 page par appartement

@@ -1,0 +1,131 @@
+categories:
+  - id: residences
+    label: Résidences
+    description: Appartements meublés pensés pour les séjours moyenne et longue durée.
+  - id: studios
+    label: Studios
+    description: Espaces compacts optimisés, idéals pour jeunes actifs et consultants.
+  - id: offices
+    label: Bureaux
+    description: Plateaux modulables avec accès indépendant et services business-ready.
+  - id: retail
+    label: Commerces
+    description: Locaux en rez-de-chaussée bénéficiant d’une forte visibilité et de flux constants.
+units:
+  - name: Appartement Type A
+    category: residences
+    surface: "62 m²"
+    highlights:
+      - Double exposition
+      - Suite parentale
+      - Balcon filant
+    note: Plan HD sur demande — idéal pour couple actif.
+    plan_url: "/plans/plan-autorise.pdf"
+  - name: Appartement Type B
+    category: residences
+    surface: "74 m²"
+    highlights:
+      - Séjour lumineux
+      - Cuisine semi-ouverte
+      - Buanderie séparée
+    note: Fiche d’ameublement en préparation.
+    plan_url: "/plans/plan-autorise.pdf"
+  - name: Appartement Type C
+    category: residences
+    surface: "80 m²"
+    highlights:
+      - 2 chambres
+      - Dressing intégré
+      - Option twin suite
+    note: Possibilité d’aménagement sur-mesure.
+    plan_url: "/plans/plan-autorise.pdf"
+  - name: Appartement Type D
+    category: residences
+    surface: "86 m²"
+    highlights:
+      - Séjour / salle à manger
+      - Terrasses jumelles
+      - Cellier privatif
+    note: Idéal coliving exécutif.
+    plan_url: "/plans/plan-autorise.pdf"
+  - name: Appartement Type E
+    category: residences
+    surface: "90 m²"
+    highlights:
+      - Master suite avec salle d’eau
+      - Cuisine fermée équipée
+      - Rangements sur-mesure
+    note: Livraison avec pack mobilier premium.
+    plan_url: "/plans/plan-autorise.pdf"
+  - name: Appartement Type F
+    category: residences
+    surface: "95 m²"
+    highlights:
+      - Triple orientation
+      - Espace bureau intégré
+      - Terrasse arborée
+    note: Conversion éventuelle en duplex (sur demande).
+    plan_url: "/plans/plan-autorise.pdf"
+  - name: Studio Urbain S1
+    category: studios
+    surface: "32 m²"
+    highlights:
+      - Kitchenette équipée
+      - Meuble lit escamotable
+      - Vue boulevard
+    note: Pack location courte durée disponible.
+    plan_url: "/plans/plan-autorise.pdf"
+  - name: Studio Signature S2
+    category: studios
+    surface: "36 m²"
+    highlights:
+      - Coin salon séparé
+      - Dressing modulaire
+      - Terrasse privative
+    note: Compatible offre corporate housing.
+    plan_url: "/plans/plan-autorise.pdf"
+  - name: Plateau bureau 01
+    category: offices
+    surface: "95 m²"
+    highlights:
+      - Entrée indépendante
+      - Baies vitrées
+      - Pré-câblage IT
+    note: Possibilité de réunir avec plateau 02.
+    plan_url: "/plans/plan-autorise.pdf"
+  - name: Plateau bureau 02
+    category: offices
+    surface: "120 m²"
+    highlights:
+      - Open space divisible
+      - Salle réunion dédiée
+      - Accès parking
+    note: Option showroom combiné.
+    plan_url: "/plans/plan-autorise.pdf"
+  - name: Plateau bureau 03
+    category: offices
+    surface: "135 m²"
+    highlights:
+      - Grande terrasse
+      - Triple orientation
+      - Archives dédiées
+    note: Ideal pour cabinet premium.
+    plan_url: "/plans/plan-autorise.pdf"
+  - name: Retail Corner R1
+    category: retail
+    surface: "78 m²"
+    highlights:
+      - Angle vitré
+      - Hauteur sous plafond 4m
+      - Réserve arrière
+    note: Compatible restauration légère.
+    plan_url: "/plans/plan-autorise.pdf"
+  - name: Retail Flagship R2
+    category: retail
+    surface: "110 m²"
+    highlights:
+      - Façade double
+      - Accès livraison
+      - Possibilité mezzanine
+    note: Liaison directe avec plateau bureau.
+    plan_url: "/plans/plan-autorise.pdf"

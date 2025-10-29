@@ -1,0 +1,14 @@
+<section class="section container">
+  <div class="section__header">
+    <h2 class="section__title">{{ site.data.timeline.title }}</h2>
+    <p class="section__subtitle">{{ site.data.timeline.subtitle }}</p>
+  </div>
+  <div class="timeline">
+    {% for step in site.data.timeline.steps %}
+      <div class="timeline__item">
+        <p class="timeline__stage">{{ step.stage }}</p>
+        <p>{{ step.copy }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>

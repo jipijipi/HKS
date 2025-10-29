@@ -1,0 +1,11 @@
+<section class="section container">
+  <div class="section__header">
+    <h2 class="section__title">{{ site.data.amenities.title }}</h2>
+    <p class="section__subtitle">{{ site.data.amenities.subtitle }}</p>
+  </div>
+  <ul class="list list--bullets">
+    {% for item in site.data.amenities.items %}
+      <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+</section>
