@@ -5,7 +5,7 @@ subtitle: >
   Un immeuble Art Déco réinventé, à deux pas du quartier d'affaires Casa Finance City et des axes majeurs reliant l'aéroport et la corniche.
 ctas:
   - label: Planifier une visite
-    href: mailto:sicorep.imo@gmail.com?subject=Rue%20des%20Courlis%20-%20Visite
+    href: "#contact"
     style: btn--primary
   - label: Télécharger les plans
     href: "/plans/plan-autorise.pdf"

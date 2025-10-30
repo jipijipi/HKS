@@ -14,11 +14,18 @@ categories:
 units:
   - name: Appartement Type A
     category: residences
-    surface: "62 m²"
+    surface: "66.30 m² + 51.40 m² terrasse"
     highlights:
       - Double exposition
-      - Suite parentale
-      - Balcon filant
+      - Deux chambres
+      - Terrasse filante
+      - Grand séjour
+      - Cuisine séparée avec buanderie attenante
+      - Salle de bain moderne
+      - Bonne isolation phonique
+      - Menuiseries double vitrage
+      - Climatisation individuelle réversible
+      - Stationnement privatif
     note: Plan HD sur demande — idéal pour couple actif.
     plan_url: "/plans/APTA.pdf"
     preview: "/plans/2x/APTA@2x.png"
