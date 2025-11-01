@@ -82,6 +82,21 @@
                 </ul>
               {% endif %}
             </div>
+            {% if unit.amenities %}
+              <div class="plan-card__amenities" role="list">
+                {% for amenity in unit.amenities %}
+                  {% assign label = amenity.label | default: amenity[0] %}
+                  {% assign value = amenity.value | default: amenity[1] %}
+                  <div class="plan-card__amenity" role="listitem">
+                    <span class="plan-card__amenity-icon" aria-hidden="true">✓</span>
+                    <div class="plan-card__amenity-content">
+                      <span class="plan-card__amenity-label">{{ label }}</span>
+                      <span class="plan-card__amenity-value">{{ value }}</span>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            {% endif %}
             <div class="plan-card__preview{% if unit.preview %} has-image{% endif %}">
               {% if unit.preview %}
                 <img src="{{ unit.preview | relative_url }}" alt="Plan {{ unit.name }}" loading="lazy" />
@@ -89,10 +104,12 @@
                 Aperçu plan à intégrer
               {% endif %}
             </div>
-           <!--  <a class="plan-card__cta" href="{{ unit.plan_url | relative_url }}" target="_blank" rel="noopener">Voir le plan PDF</a>
+            {% if unit.plan_url %}
+              <a class="plan-card__cta" href="{{ unit.plan_url | relative_url }}" target="_blank" rel="noopener">Voir le plan PDF</a>
+            {% endif %}
             {% if unit.note %}
               <p class="plan-card__note">{{ unit.note }}</p>
-            {% endif %} -->
+            {% endif %}
           </article>
         {% endfor %}
       </div>
