@@ -16,38 +16,40 @@ units:
     category: residences
     surface: "66.30 m² + 51.40 m² terrasse"
     highlights:
-      - Double exposition
-      - Deux chambres
-      - Terrasse filante
-      - Grand séjour
-      - Cuisine séparée avec buanderie attenante
-      - Salle de bain moderne
-      - Bonne isolation phonique
-      - Menuiseries double vitrage
-      - Climatisation individuelle réversible
-      - Stationnement privatif
-    note: Plan HD sur demande — idéal pour couple actif.
-    plan_url: "/plans/APTA.pdf"
+      - Séjour double exposition sur terrasse continue
+      - Deux chambres de part et d’autre du salon
+      - Cuisine séparée et buanderie attenante
+      - Salle de bain baignée de lumière naturelle
+      - Terrasse filante de 51 m² pour repas et lounge
+      - Cellier extérieur privatif pour rangement supplémentaire
+    note: Plan détaillé sur demande — idéal pour un couple actif avec télétravail.
+    plan_url: "/plans/PDF/APTA.pdf"
     preview: "/plans/2x/APTA@2x.png"
   - name: Appartement Type B
     category: residences
-    surface: "74 m²"
+    surface: "75.00 m² + 71.60 m² terrasse rooftop"
     highlights:
-      - Séjour lumineux
-      - Cuisine semi-ouverte
-      - Buanderie séparée
-    note: Fiche d’ameublement en préparation.
-    plan_url: "/plans/APTB.pdf"
+      - Grand salon traversant ouvrant sur la terrasse
+      - Deux chambres doubles avec rangements intégrés
+      - Cuisine indépendante avec cellier/buanderie
+      - Salle d’eau et salle de bain séparées pour plus de confort
+      - Terrasse rooftop privative de 71 m² pour pergola ou jacuzzi
+      - Accès direct depuis le séjour et la chambre principale
+    note: Livraison possible avec sélection mobilier intérieur/extérieur.
+    plan_url: "/plans/PDF/APTB.pdf"
     preview: "/plans/2x/APTB@2x.png"
   - name: Appartement Type C
     category: residences
-    surface: "80 m²"
+    surface: "97.30 m² + 1.50 m² balcon"
     highlights:
-      - 2 chambres
-      - Dressing intégré
-      - Option twin suite
-    note: Possibilité d’aménagement sur-mesure.
-    plan_url: "/plans/APTC.pdf"
+      - Séjour plein sud prolongé par balcon filant
+      - Deux chambres généreuses avec dressings
+      - Suite parentale possible côté cour intérieure
+      - Cuisine séparée pouvant s’ouvrir sur la pièce à vivre
+      - Nombreux placards intégrés pour optimiser la circulation
+      - Balcon 1.5 m² idéal pour petit déjeuner extérieur
+    note: Adaptable en 2 ou 3 chambres selon cloisonnement.
+    plan_url: "/plans/PDF/APTC.pdf"
     preview: "/plans/2x/APTC@2x.png"
   - name: Appartement Type D
     category: residences
@@ -57,90 +59,122 @@ units:
       - Terrasses jumelles
       - Cellier privatif
     note: Idéal coliving exécutif.
-    plan_url: "/plans/APTD.pdf"
+    plan_url: "/plans/PDF/APTD.pdf"
     preview: "/plans/2x/APTD@2x.png"
   - name: Appartement Type E
     category: residences
-    surface: "90 m²"
+    surface: "78.50 m² + balcon filant"
     highlights:
-      - Master suite avec salle d’eau
-      - Cuisine fermée équipée
-      - Rangements sur-mesure
-    note: Livraison avec pack mobilier premium.
-    plan_url: "/plans/APTE.pdf"
+      - Séjour central ouvert sur balcon filant
+      - Suite principale avec salle d’eau attenante
+      - Cuisine fermée équipée et espace repas
+      - Chambre secondaire convertible en bureau
+      - Nombreux rangements intégrés sur mesure
+      - Second accès buanderie pour entretien discret
+    note: Livraison possible avec pack mobilier premium.
+    plan_url: "/plans/PDF/APTE.pdf"
     preview: "/plans/2x/APTE@2x.png"
   - name: Appartement Type F
     category: residences
-    surface: "95 m²"
+    surface: "102.50 m² + terrasse panoramique"
     highlights:
-      - Triple orientation
-      - Espace bureau intégré
-      - Terrasse arborée
-    note: Conversion éventuelle en duplex (sur demande).
-    plan_url: "/plans/APTF.pdf"
+      - Séjour cathédrale ouvrant sur terrasse panoramique
+      - Triple orientation et ventilation naturelle
+      - Suite parentale avec dressing et salle d’eau
+      - Cuisine familiale + îlot repas et buanderie attenante
+      - Coin bureau fermé idéal télétravail
+      - Terrasse arborée prête pour jardinières ou pergola
+    note: Conversion possible en duplex exécutif sur demande.
+    plan_url: "/plans/PDF/APTF.pdf"
     preview: "/plans/2x/APTF@2x.png"
   - name: Studio Urbain S1
     category: studios
-    surface: "32 m²"
+    surface: "54.00 m² + terrasse"
     highlights:
-      - Kitchenette équipée
-      - Meuble lit escamotable
-      - Vue boulevard
+      - Grand salon modulable avec coin nuit cloisonnable
+      - Cuisine linéaire équipée et bar repas
+      - Salle d’eau avec espace buanderie dédié
+      - Rangements intégrés sur toute la longueur du mur
+      - Terrasse privative idéale pour outdoor lounge
+      - Pré-équipement climatisation réversible
     note: Pack location courte durée disponible.
-    plan_url: "/plans/STUA.pdf"
+    plan_url: "/plans/PDF/STUA.pdf"
     preview: "/plans/2x/STUA@2x.png"
   - name: Studio Signature S2
     category: studios
-    surface: "36 m²"
+    surface: "70.20 m² + terrasse"
     highlights:
-      - Coin salon séparé
-      - Dressing modulaire
-      - Terrasse privative
+      - Salon et chambre séparés par cloison coulissante
+      - Dressing modulaire pleine hauteur
+      - Cuisine semi-ouverte avec comptoir repas
+      - Salle d’eau avec espace laundry intégré
+      - Terrasse privative végétalisable pour détente
+      - Pré-câblage domotique pour pilotage à distance
     note: Compatible offre corporate housing.
-    plan_url: "/plans/STUB.pdf"
+    plan_url: "/plans/PDF/STUB.pdf"
     preview: "/plans/2x/STUB@2x.png"
   - name: Plateau bureau 01
     category: offices
-    surface: "95 m²"
+    surface: "66.80 m² modulables"
     highlights:
-      - Entrée indépendante
-      - Baies vitrées
-      - Pré-câblage IT
+      - Hall d'entrée double hauteur (HSP 5.25 m)
+      - Deux cellules vitrées de 40 et 36 m²
+      - Mezzanine légère pour salle de réunion 21 m²
+      - Réserves de 20 à 24 m² en second jour
+      - Accès pompier / sortie de secours dédiée
+      - Sanitaires et local technique mutualisés
     note: Possibilité de réunir avec plateau 02.
-    plan_url: "/plans/plan-autorise.pdf"
+    plan_url: "/plans/PDF/BUR01.pdf"
+    preview: "/plans/2x/BUR01@2x.png"
   - name: Plateau bureau 02
     category: offices
-    surface: "120 m²"
+    surface: "61.80 m² + espaces support"
     highlights:
-      - Open space divisible
-      - Salle réunion dédiée
-      - Accès parking
+      - Plateau open-space 61.80 m² divisible
+      - Réserve 35 m² et back-office 24 m² communicants
+      - Local technique / archives 17.5 m²
+      - Sanitaires déjà pré-positionnés
+      - Distribution verticale à proximité immédiate
+      - Pré-câblage courant fort / faible dans les gaines
     note: Option showroom combiné.
-    plan_url: "/plans/plan-autorise.pdf"
+    plan_url: "/plans/PDF/BUR02.pdf"
+    preview: "/plans/2x/BUR02@2x.png"
   - name: Plateau bureau 03
     category: offices
-    surface: "135 m²"
+    surface: "123.40 m² double hauteur"
     highlights:
-      - Grande terrasse
-      - Triple orientation
-      - Archives dédiées
-    note: Ideal pour cabinet premium.
-    plan_url: "/plans/plan-autorise.pdf"
+      - Grand plateau divisible en deux ailes 40/43 m²
+      - Mezzanine 21.5 m² pour direction ou lounge
+      - Réserve fermée 35 m² avec fenêtre
+      - Sanitaires séparés hommes/femmes en place
+      - Accès livraison et évacuation pompier sécurisée
+      - Volume double hauteur propice à vitrine interne
+    note: Idéal pour cabinet premium.
+    plan_url: "/plans/PDF/BUR03.pdf"
+    preview: "/plans/2x/BUR03@2x.png"
   - name: Retail Corner R1
     category: retail
     surface: "78 m²"
     highlights:
-      - Angle vitré
-      - Hauteur sous plafond 4m
-      - Réserve arrière
+      - Volume d'angle entièrement vitré sur deux axes
+      - Hauteur sous plafond 5.25 m pour signalétique XXL
+      - Réserve arrière 24 m² avec accès livraison
+      - Local technique indépendant pour extraction
+      - Sanitaires privatifs déjà positionnés
+      - Liaison possible avec plateau bureau 01
     note: Compatible restauration légère.
-    plan_url: "/plans/plan-autorise.pdf"
+    plan_url: "/plans/PDF/COM01.pdf"
+    preview: "/plans/2x/COM01@2x.png"
   - name: Retail Flagship R2
     category: retail
     surface: "110 m²"
     highlights:
-      - Façade double
-      - Accès livraison
-      - Possibilité mezzanine
+      - Façade double développée pour flagship ou galerie
+      - Accès livraison direct + sortie de secours pompier
+      - Mezzanine légère 21.5 m² intégrable en show-room
+      - Réserves 35 m² et 17 m² pour stockage et back-office
+      - Sanitaires séparés et espace personnel en place
+      - Connexion intérieure avec bureaux premium
     note: Liaison directe avec plateau bureau.
-    plan_url: "/plans/plan-autorise.pdf"
+    plan_url: "/plans/PDF/COM02.pdf"
+    preview: "/plans/2x/COM02@2x.png"
