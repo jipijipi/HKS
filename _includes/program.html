@@ -5,11 +5,12 @@
   </div>
   <div class="stats">
     {% for stat in site.data.program.stats %}
-      <article class="stat">
-        <p class="stat__value">{{ stat.value }}</p>
-        <p class="stat__label">{{ stat.label }}</p>
-        <p class="stat__description">{{ stat.description }}</p>
-      </article>
+      {% assign target = stat.target | default: '#plans' %}
+      <a class="stat stat--link" href="{{ target }}" data-stat-link>
+        <span class="stat__value">{{ stat.value }}</span>
+        <span class="stat__label">{{ stat.label }}</span>
+        <span class="stat__description">{{ stat.description }}</span>
+      </a>
     {% endfor %}
   </div>
 </section>

@@ -1,5 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
   const browsers = document.querySelectorAll("[data-unit-browser]");
+  const statLinks = document.querySelectorAll("[data-stat-link]");
+
+  statLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const targetHash = link.getAttribute("href");
+      if (!targetHash) return;
+      event.preventDefault();
+      if (window.location.hash === targetHash) {
+        window.dispatchEvent(new Event("hashchange"));
+        return;
+      }
+      window.location.hash = targetHash;
+    });
+  });
 
   if (!browsers.length) return;
 

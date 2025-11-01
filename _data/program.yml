@@ -3,10 +3,13 @@ subtitle: Des espaces pensés pour la flexibilité et la rentabilité.
 stats:
   - value: 14
     label: Appartements
+    target: "#residences/appartement-type-a"
     description: Livrés clé en main, cuisines équipées, climatisation individualisée, parking réservé.
   - value: 5
     label: Plateaux de bureaux
+    target: "#offices/plateau-bureau-01"
     description: Entrée indépendante, contrôle d’accès électronique, flexibilité d’aménagement pour équipes agiles.
   - value: 2
     label: Locaux commerciaux
+    target: "#retail/retail-corner-r1"
     description: Vitrines sur rue à fort passage, liaison optionnelle vers les bureaux mitoyens pour formats showroom.
