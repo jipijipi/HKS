@@ -1,5 +1,5 @@
 title: "Rue des Courlis"
-baseurl: "/HKS" # GitHub Pages repo path; set to "" when using a custom domain
+baseurl: "" # /HKS if GitHub Pages repo path; set to "" when using a custom domain
 url: ""
 lang: fr
 description: "Résidences meublées, bureaux et commerces au cœur de Casablanca."
