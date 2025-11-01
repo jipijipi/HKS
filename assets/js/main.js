@@ -22,6 +22,14 @@ document.addEventListener("DOMContentLoaded", () => {
     return `#${cat}/${unit}`;
   };
 
+  const scrollToPlans = () => {
+    const target = document.querySelector("#plans");
+    if (!target) return;
+    requestAnimationFrame(() => {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  };
+
   browsers.forEach((browser) => {
     const categoryButtons = browser.querySelectorAll("[data-unit-category]");
     const panels = browser.querySelectorAll("[data-unit-panel]");
@@ -135,6 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!matchingCategory) return;
 
       activateCategory(categoryId, { unitId, updateHash: false });
+      scrollToPlans();
     };
 
     window.addEventListener("hashchange", syncFromHash);
@@ -145,6 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const matchingCategory = browser.querySelector(`[data-unit-category="${categoryId}"]`);
       if (matchingCategory) {
         activateCategory(categoryId, { unitId, updateHash: false });
+        scrollToPlans();
         return;
       }
     }
