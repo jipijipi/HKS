@@ -502,9 +502,21 @@ a {
   color: $accent;
 }
 
-.plan-card__metric--availability {
-  color: rgba(40, 50, 63, 0.8);
-  font-weight: 500;
+.plan-card__availability {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(185, 144, 68, 0.18);
+  color: $primary;
+  font-weight: 600;
+  padding: 0.3rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(185, 144, 68, 0.35);
+}
+
+.plan-card__availability strong {
+  font-weight: 700;
+  color: $accent;
 }
 
 .plan-card__highlights {

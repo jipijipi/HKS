@@ -76,7 +76,7 @@
               {% endif %}
               {% assign availability = unit.available | default: 1 %}
               {% assign availability = availability | plus: 0 %}
-              <span class="plan-card__metric plan-card__metric--availability">{{ availability }} {% if availability > 1 %}lots restants{% else %}lot restant{% endif %}</span>
+              <span class="plan-card__availability">Lots disponibles : <strong>{{ availability }}</strong></span>
               {% if unit.highlights %}
                 <ul class="plan-card__highlights">
                   {% for item in unit.highlights %}
