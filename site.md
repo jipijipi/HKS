@@ -43,3 +43,6 @@ meublé a la demande
 1 page par appartement
 
 Remove big pdf
+
+orientation
+logo + copyright sur pdf

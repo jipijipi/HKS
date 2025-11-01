@@ -216,7 +216,7 @@ units:
         value: "Sur demande"
       - label: "Fibre"
         value: "Pré-câblage intégré"
-    note: Communicable avec plateau bureau 02.
+    note: "Communicable avec le <a href=\"#offices/plateau-bureau-02\">plateau bureau 02</a>."
     plan_url: "/plans/PDF/BUR01.pdf"
     preview: "/plans/2x/BUR01@2x.png"
   - name: Plateau bureau 02
@@ -229,7 +229,10 @@ units:
         value: "Sur demande"
       - label: "Fibre"
         value: "Pré-câblage intégré"
-    note: Liaison possible avec plateau bureau 01 et 03.
+    note: >
+      Liaison possible avec les
+      <a href="#offices/plateau-bureau-01">plateau bureau 01</a>
+      et <a href="#offices/plateau-bureau-03">plateau bureau 03</a>.
     plan_url: "/plans/PDF/BUR02.pdf"
     preview: "/plans/2x/BUR02@2x.png"
   - name: Plateau bureau 03
@@ -242,7 +245,7 @@ units:
         value: "Sur demande"
       - label: "Fibre"
         value: "Pré-câblage intégré"
-    note: Liaison possible avec plateau bureau 02.
+    note: "Liaison possible avec le <a href=\"#offices/plateau-bureau-02\">plateau bureau 02</a>."
     plan_url: "/plans/PDF/BUR03.pdf"
     preview: "/plans/2x/BUR03@2x.png"
   - name: Plateau bureau 04
@@ -256,7 +259,7 @@ units:
         value: "Sur demande"
       - label: "Fibre"
         value: "Pré-câblage intégré"
-    note: Liaison possible avec local commercial R1.
+    note: "Liaison possible avec le <a href=\"#retail/retail-r1\">local commercial R1</a>."
     plan_url: "/plans/PDF/BUR04.pdf"
     preview: "/plans/2x/BUR04@2x.png"
   - name: Plateau bureau 05
@@ -270,7 +273,7 @@ units:
         value: "Sur demande"
       - label: "Fibre"
         value: "Pré-câblage intégré"
-    note: Liaison possible avec local commercial R2 via mezzanine.
+    note: "Liaison possible avec le <a href=\"#retail/retail-r2\">local commercial R2</a> via mezzanine."
     plan_url: "/plans/PDF/BUR05.pdf"
     preview: "/plans/2x/BUR05@2x.png"
   - name: Retail R1
@@ -283,7 +286,7 @@ units:
         value: "Sur demande"
       - label: "Fibre"
         value: "Pré-câblage intégré"
-    note: Liaison possible avec plateau bureau 04.
+    note: "Liaison possible avec le <a href=\"#offices/plateau-bureau-04\">plateau bureau 04</a>."
     plan_url: "/plans/PDF/COM01.pdf"
     preview: "/plans/2x/COM01@2x.png"
   - name: Retail R2
@@ -296,6 +299,6 @@ units:
         value: "Sur demande"
       - label: "Fibre"
         value: "Pré-câblage intégré"
-    note: Liaison possible avec plateau bureau 05.
+    note: "Liaison possible avec le <a href=\"#offices/plateau-bureau-05\">plateau bureau 05</a>."
     plan_url: "/plans/PDF/COM02.pdf"
     preview: "/plans/2x/COM02@2x.png"
