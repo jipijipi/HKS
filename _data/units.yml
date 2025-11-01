@@ -1,7 +1,7 @@
 categories:
   - id: residences
     label: Résidences
-    description: Appartements meublés pensés pour les séjours moyenne et longue durée.
+    description: Appartements pensés pour les séjours moyenne et longue durée.
   - id: studios
     label: Studios
     description: Espaces compacts optimisés, idéals pour jeunes actifs et consultants.
@@ -15,300 +15,287 @@ units:
   - name: Appartement Type A
     category: residences
     surface: "66.30 m² + 51.40 m² terrasse"
+    available: 1
     highlights:
-      - Séjour double exposition sur terrasse filante
-      - Deux chambres isolées par le salon
-      - Cuisine fermée avec buanderie attenante
-      - Cellier extérieur sur terrasse de 51 m²
+      - Deux chambres
+      - Terrasse filante
+      - Grand séjour
+      - Cuisine séparée avec buanderie attenante
+      - Salle de bain moderne
+      - Bonne isolation phonique
+      - Menuiseries double vitrage
     amenities:
+      - label: "Eau & Electricité"
+        value: "Incluses"
       - label: "Climatisation"
         value: "Réversible individuelle"
       - label: "Stationnement"
-        value: "Place privative en sous-sol"
+        value: "Place privative en sous-sol incluse"
       - label: "Fibre"
         value: "Pré-câblage intégré"
-      - label: "Cellier"
-        value: "Extérieur sur terrasse"
-    note: Plan détaillé sur demande — idéal pour un couple actif en télétravail.
+    note: Livraison possible avec sélection mobilier intérieur/extérieur.
     plan_url: "/plans/PDF/APTA.pdf"
     preview: "/plans/2x/APTA@2x.png"
   - name: Appartement Type B
     category: residences
-    surface: "75.00 m² + 71.60 m² terrasse rooftop"
+    surface: "75.00 m² + 71.60 m² terrasse"
+    available: 1
     highlights:
-      - Salon traversant sur rooftop privatif
-      - Deux chambres avec placards intégrés
-      - Cuisine indépendante et cellier/buanderie
-      - Rooftop 71 m² prêt pour pergola ou jacuzzi
+      - Double exposition
+      - Deux chambres
+      - Terrasse filante
+      - Grand séjour
+      - Cuisine séparée avec buanderie attenante
+      - Salle de bain moderne
+      - Bonne isolation phonique
+      - Menuiseries double vitrage
     amenities:
+      - label: "Eau & Electricité"
+        value: "Incluses"
       - label: "Climatisation"
-        value: "Pré-installation VRV"
+        value: "Réversible individuelle"
       - label: "Stationnement"
-        value: "1 place en sous-sol"
-      - label: "Rooftop"
-        value: "Terrasse aménageable 71 m²"
+        value: "Place privative en sous-sol incluse"
       - label: "Fibre"
-        value: "Pré-câblée"
-    note: Livraison possible avec sélection mobilier indoor/outdoor.
+        value: "Pré-câblage intégré"
+    note: Livraison possible avec sélection mobilier intérieur/extérieur.
     plan_url: "/plans/PDF/APTB.pdf"
     preview: "/plans/2x/APTB@2x.png"
   - name: Appartement Type C
     category: residences
-    surface: "97.30 m² + 1.50 m² balcon"
+    surface: "97.30 m²"
+    available: 3
     highlights:
-      - Séjour plein sud prolongé par balcon
-      - Deux chambres avec dressings intégrés
-      - Cuisine séparée modulable ouverte/fermée
-      - Placards et rangements sur palier
+      - Trois chambres
+      - Suite principale avec salle d’eau attenante
+      - Grand séjour
+      - Grande cuisine
+      - Salle de bain moderne
+      - Bonne isolation phonique
+      - Menuiseries double vitrage
     amenities:
+      - label: "Eau & Electricité"
+        value: "Incluses"
       - label: "Climatisation"
-        value: "Pré-équipement gainable"
+        value: "Réversible individuelle"
       - label: "Stationnement"
-        value: "1 place réservée"
-      - label: "Balcon"
-        value: "1.5 m² côté cour"
+        value: "Place privative en sous-sol incluse"
       - label: "Fibre"
-        value: "Pré-câblée"
-    note: Adaptable en 2 ou 3 chambres selon cloisonnement.
+        value: "Pré-câblage intégré"
+    note: Livraison possible avec une sélection de mobilier.
     plan_url: "/plans/PDF/APTC.pdf"
     preview: "/plans/2x/APTC@2x.png"
   - name: Appartement Type D
     category: residences
-    surface: "86 m²"
+    surface: "72.80 m²"
+    available: 3
     highlights:
-      - Séjour / salle à manger baigné de lumière
-      - Terrasses jumelles pour ventilation traversante
-      - Cuisine fermée avec buanderie dédiée
-      - Cellier privatif sur palier
+      - Deux chambres
+      - Suite principale avec salle d’eau attenante
+      - Grand séjour
+      - Cuisine séparée avec buanderie attenante
+      - Salle de bain moderne
+      - Bonne isolation phonique
+      - Menuiseries double vitrage
     amenities:
+      - label: "Eau & Electricité"
+        value: "Incluses"
       - label: "Climatisation"
-        value: "Réversible multisplit"
+        value: "Réversible individuelle"
       - label: "Stationnement"
-        value: "1 place incluse"
-      - label: "Terrasses"
-        value: "Deux espaces opposés"
+        value: "Place privative en sous-sol incluse"
       - label: "Fibre"
-        value: "Pré-câblée"
-    note: Idéal coliving exécutif.
+        value: "Pré-câblage intégré"
+    note: Livraison possible avec une sélection de mobilier.
     plan_url: "/plans/PDF/APTD.pdf"
     preview: "/plans/2x/APTD@2x.png"
   - name: Appartement Type E
     category: residences
-    surface: "78.50 m² + balcon filant"
+    surface: "78.50 m²"
+    available: 3
     highlights:
-      - Séjour central ouvert sur balcon filant
+      - Deux chambres
       - Suite principale avec salle d’eau attenante
-      - Cuisine fermée équipée et coin repas
-      - Chambre secondaire convertible en bureau
+      - Grand séjour
+      - Grande cuisine
+      - Salle de bain moderne
+      - Bonne isolation phonique
+      - Menuiseries double vitrage
     amenities:
+      - label: "Eau & Electricité"
+        value: "Incluses"
       - label: "Climatisation"
         value: "Réversible individuelle"
-      - label: "Balcon"
-        value: "Filant côté jardin"
       - label: "Stationnement"
-        value: "Place privative"
+        value: "Place privative en sous-sol incluse"
       - label: "Fibre"
-        value: "Pré-câblée"
-    note: Livraison possible avec pack mobilier premium.
+        value: "Pré-câblage intégré"
+    note: Livraison possible avec une sélection de mobilier.
     plan_url: "/plans/PDF/APTE.pdf"
     preview: "/plans/2x/APTE@2x.png"
   - name: Appartement Type F
     category: residences
-    surface: "102.50 m² + terrasse panoramique"
+    surface: "102.50 m²"
+    available: 1
     highlights:
-      - Séjour cathédrale triple orientation
-      - Terrasse panoramique prête à végétaliser
-      - Suite parentale avec dressing et salle d’eau
-      - Bureau fermé et buanderie attenante
+      - Trois chambres
+      - Suite principale avec salle d’eau attenante
+      - Séjour traversant double orientation
+      - Terrasses prêtes à végétaliser
+      - Grand séjour
+      - Salles de bain modernes
+      - Bonne isolation phonique
+      - Menuiseries double vitrage
     amenities:
+      - label: "Eau & Electricité"
+        value: "Incluses"
       - label: "Climatisation"
-        value: "VRV haut de gamme"
-      - label: "Terrasse"
-        value: "Panoramique paysageable"
+        value: "Réversible individuelle"
       - label: "Stationnement"
-        value: "2 places possibles"
+        value: "Place privative en sous-sol incluse"
       - label: "Fibre"
-        value: "Pré-câblée"
-    note: Conversion possible en duplex exécutif sur demande.
+        value: "Pré-câblage intégré"
+    note: Livraison possible avec une sélection de mobilier.
     plan_url: "/plans/PDF/APTF.pdf"
     preview: "/plans/2x/APTF@2x.png"
   - name: Studio Urbain S1
     category: studios
-    surface: "54.00 m² + terrasse"
+    surface: "54.00 m² + 7.50 m² terrasse"
+    available: 1
     highlights:
-      - Plateau modulable séparant coin nuit
-      - Cuisine équipée avec bar repas
-      - Salle d’eau avec buanderie dédiée
-      - Terrasse privative pour outdoor lounge
+      - Une chambre
+      - Kitchenette équipée
+      - Terrasse
+      - Grand séjour
+      - Salle de bain moderne
+      - Bonne isolation phonique
+      - Menuiseries double vitrage
     amenities:
+      - label: "Eau & Electricité"
+        value: "Incluses"
       - label: "Climatisation"
-        value: "Pré-équipement multisplit"
-      - label: "Mobilier"
-        value: "Pack location courte durée"
-      - label: "Terrasse"
-        value: "Privative"
+        value: "Réversible individuelle"
+      - label: "Stationnement"
+        value: "Place privative en sous-sol incluse"
       - label: "Fibre"
-        value: "Pré-câblée"
-    note: Pack location courte durée disponible.
+        value: "Pré-câblage intégré"
+    note: Livraison possible avec une sélection de mobilier.
     plan_url: "/plans/PDF/STUA.pdf"
     preview: "/plans/2x/STUA@2x.png"
   - name: Studio Signature S2
     category: studios
-    surface: "70.20 m² + terrasse"
+    surface: "70.20 m² + 6.90 m² terrasse"
+    available: 1
     highlights:
-      - Salon et chambre séparés par cloison mobile
-      - Dressing modulaire pleine hauteur
-      - Cuisine semi-ouverte avec comptoir repas
-      - Terrasse privative végétalisable
+      - Une chambre
+      - Terrasse
+      - Kitchenette équipée
+      - Grand séjour
+      - Salle de bain moderne
+      - Bonne isolation phonique
+      - Menuiseries double vitrage
     amenities:
+      - label: "Eau & Electricité"
+        value: "Incluses"
       - label: "Climatisation"
-        value: "Pré-équipement gainable"
-      - label: "Mobilier"
-        value: "Pack corporate disponible"
-      - label: "Terrasse"
-        value: "Privative végétalisable"
+        value: "Réversible individuelle"
+      - label: "Stationnement"
+        value: "Place privative en sous-sol incluse"
       - label: "Fibre"
-        value: "Pré-câblée"
-    note: Compatible offre corporate housing.
+        value: "Pré-câblage intégré"
+    note: Livraison possible avec une sélection de mobilier.
     plan_url: "/plans/PDF/STUB.pdf"
     preview: "/plans/2x/STUB@2x.png"
   - name: Plateau bureau 01
     category: offices
-    surface: "66.80 m² modulables"
+    surface: "123.40 m²"
     highlights:
-      - Hall double hauteur vitré
-      - Deux bureaux cloisonnables 36-40 m²
-      - Mezzanine 21 m² prête réunion
-      - Réserves 20-24 m² avec accès pompier
+      - Grand open-space de 123 m² modulable
     amenities:
-      - label: "Fluides"
-        value: "Compteurs et attentes posés"
-      - label: "HVAC"
-        value: "Pré-installation VRV"
       - label: "Stationnement"
-        value: "Places sur demande"
+        value: "Sur demande"
       - label: "Fibre"
-        value: "Pré-câblage baie"
-    note: Mezzanine communicable avec plateau 02.
+        value: "Pré-câblage intégré"
+    note: Communicable avec plateau bureau 02.
     plan_url: "/plans/PDF/BUR01.pdf"
     preview: "/plans/2x/BUR01@2x.png"
   - name: Plateau bureau 02
     category: offices
-    surface: "61.80 m² + espaces support"
+    surface: "66.80 m²"
     highlights:
-      - Open-space 61 m² prêt à cloisonner
-      - Réserve 35 m² et back-office 24 m² attenants
-      - Archives ventilées 17.5 m²
-      - Sanitaires centralisés et gaines pré-câblées
+      - Open-space 66 m² prêt à cloisonner
     amenities:
-      - label: "Fluides"
-        value: "Réseaux tirés"
-      - label: "HVAC"
-        value: "Pré-installation VRV"
       - label: "Stationnement"
         value: "Sur demande"
       - label: "Fibre"
-        value: "Baie dédiée"
-    note: Liaison possible avec plateau 01 en showroom.
+        value: "Pré-câblage intégré"
+    note: Liaison possible avec plateau bureau 01 et 03.
     plan_url: "/plans/PDF/BUR02.pdf"
     preview: "/plans/2x/BUR02@2x.png"
   - name: Plateau bureau 03
     category: offices
-    surface: "123.40 m² double hauteur"
+    surface: "61.80 m²"
     highlights:
-      - Plateau de 64 m² sur double hauteur
-      - Mezzanine direction de 21.5 m²
-      - Réserve 35 m² avec fenêtre ouvrante
-      - Sanitaires H/F et accès livraison sécurisés
+      - Plateau de 61 m² sur double hauteur
     amenities:
-      - label: "Fluides"
-        value: "Compteurs posés"
-      - label: "HVAC"
-        value: "Pré-installation VRV"
       - label: "Stationnement"
-        value: "Places réservées"
+        value: "Sur demande"
       - label: "Fibre"
-        value: "Baie serveur dédiée"
-    note: Idéal pour cabinet premium.
+        value: "Pré-câblage intégré"
+    note: Liaison possible avec plateau bureau 02.
     plan_url: "/plans/PDF/BUR03.pdf"
     preview: "/plans/2x/BUR03@2x.png"
   - name: Plateau bureau 04
     category: offices
-    surface: "56.45 m² évolutifs"
+    surface: "40.10 m²"
     highlights:
-      - Entrée indépendante sur cour
       - Plateau clair de 56 m² modulable
-      - Local technique 10 m² + sanitaire privé
       - Trémie prête pour mezzanine légère
     amenities:
-      - label: "Fluides"
-        value: "Compteurs installés"
-      - label: "HVAC"
-        value: "Pré-équipement VRV"
       - label: "Stationnement"
         value: "Sur demande"
       - label: "Fibre"
-        value: "Pré-câblée"
-    note: Double accès et mezzanine additionnelle possibles.
+        value: "Pré-câblage intégré"
+    note: Liaison possible avec local commercial R1.
     plan_url: "/plans/PDF/BUR04.pdf"
     preview: "/plans/2x/BUR04@2x.png"
   - name: Plateau bureau 05
     category: offices
-    surface: "36.95 m² + 9.50 m² loggia"
+    surface: "36.50 m²"
     highlights:
       - Bureau vitré sur cour arborée
-      - Local technique intégré et sanitaire privé
-      - Loggia couverte de 9.5 m²
-      - Réserve mezzanine attenante pour archives
+      - Sanitaire privé
     amenities:
-      - label: "Fluides"
-        value: "Attentes prêtes"
-      - label: "HVAC"
-        value: "Pré-équipement VRV"
       - label: "Stationnement"
         value: "Sur demande"
       - label: "Fibre"
-        value: "Pré-câblée"
-    note: Accès visiteurs direct depuis le hall.
+        value: "Pré-câblage intégré"
+    note: Liaison possible avec local commercial R2 via mezzanine.
     plan_url: "/plans/PDF/BUR05.pdf"
     preview: "/plans/2x/BUR05@2x.png"
-  - name: Retail Corner R1
+  - name: Retail R1
     category: retail
-    surface: "78 m²"
+    surface: "43.40 m² + 21.50 m² mezzanine"
     highlights:
-      - Angle entièrement vitré sur deux rues
       - Plafond 5.25 m pour enseigne XXL
-      - Réserve arrière 24 m² avec accès livraison
-      - Locaux technique et sanitaires privatifs
     amenities:
-      - label: "Extraction"
-        value: "Gainable prête"
-      - label: "Livraison"
-        value: "Accès arrière sécurisé"
-      - label: "Hauteur"
-        value: "5.25 m"
+      - label: "Stationnement"
+        value: "Sur demande"
       - label: "Fibre"
-        value: "Pré-câblée"
-    note: Compatible restauration légère.
+        value: "Pré-câblage intégré"
+    note: Liaison possible avec plateau bureau 04.
     plan_url: "/plans/PDF/COM01.pdf"
     preview: "/plans/2x/COM01@2x.png"
-  - name: Retail Flagship R2
+  - name: Retail R2
     category: retail
-    surface: "110 m²"
+    surface: "35.70 m² + 17.50 m² mezzanine"
     highlights:
-      - Façade double idéale flagship
-      - Accès livraison + sortie pompier dédiés
-      - Mezzanine 21.5 m² pour showroom
-      - Réserves 35 m² et 17 m² pour back-office
+      - Plafond 5.25 m pour enseigne XXL
     amenities:
-      - label: "Extraction"
-        value: "Prévue"
-      - label: "Livraison"
-        value: "Accès direct"
-      - label: "Hauteur"
-        value: "Double volume"
+      - label: "Stationnement"
+        value: "Sur demande"
       - label: "Fibre"
-        value: "Pré-câblée"
-    note: Liaison directe avec plateau bureau.
+        value: "Pré-câblage intégré"
+    note: Liaison possible avec plateau bureau 05.
     plan_url: "/plans/PDF/COM02.pdf"
     preview: "/plans/2x/COM02@2x.png"
