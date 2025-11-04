@@ -100,11 +100,18 @@
                 {% endfor %}
               </div>
             {% endif %}
-            <div class="plan-card__preview{% if unit.preview %} has-image{% endif %}">
-              {% if unit.preview %}
-                <img src="{{ unit.preview | relative_url }}" alt="Plan {{ unit.name }}" loading="lazy" />
-              {% else %}
-                Aperçu plan à intégrer
+            <div class="plan-card__previews">
+              <div class="plan-card__preview{% if unit.preview %} has-image{% endif %}">
+                {% if unit.preview %}
+                  <img src="{{ unit.preview | relative_url }}" alt="Plan {{ unit.name }}" loading="lazy" />
+                {% else %}
+                  Aperçu plan à intégrer
+                {% endif %}
+              </div>
+              {% if unit.floor_preview %}
+                <div class="plan-card__preview has-image">
+                  <img src="{{ unit.floor_preview | relative_url }}" alt="Plan {{ unit.name }} - rez-de-chaussée" loading="lazy" />
+                </div>
               {% endif %}
             </div>
             {% if unit.plan_url %}

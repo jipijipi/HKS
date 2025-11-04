@@ -219,6 +219,7 @@ units:
     note: "Communicable avec le <a href=\"#offices/plateau-bureau-02\">plateau bureau 02</a>."
     plan_url: "/plans/PDF/BUR01.pdf"
     preview: "/plans/2x/BUR01@2x.png"
+    floor_preview: "/plans/2x/BUR01-G@2x.png"
   - name: Plateau bureau 02
     category: offices
     surface: "66.80 m² + mezzanine"
@@ -235,6 +236,7 @@ units:
       et <a href="#offices/plateau-bureau-03">plateau bureau 03</a>.
     plan_url: "/plans/PDF/BUR02.pdf"
     preview: "/plans/2x/BUR02@2x.png"
+    floor_preview: "/plans/2x/BUR02-G@2x.png"
   - name: Plateau bureau 03
     category: offices
     surface: "61.80 m² + mezzanine"
@@ -248,6 +250,7 @@ units:
     note: "Liaison possible avec le <a href=\"#offices/plateau-bureau-02\">plateau bureau 02</a>."
     plan_url: "/plans/PDF/BUR03.pdf"
     preview: "/plans/2x/BUR03@2x.png"
+    floor_preview: "/plans/2x/BUR03-G@2x.png"
   - name: Plateau bureau 04
     category: offices
     surface: "40.10 m² + mezzanine"
@@ -262,6 +265,7 @@ units:
     note: "Liaison possible avec le <a href=\"#retail/retail-r1\">local commercial R1</a>."
     plan_url: "/plans/PDF/BUR04.pdf"
     preview: "/plans/2x/BUR04@2x.png"
+    floor_preview: "/plans/2x/BUR04-G@2x.png"
   - name: Plateau bureau 05
     category: offices
     surface: "36.50 m² + mezzanine"
@@ -276,6 +280,7 @@ units:
     note: "Liaison possible avec le <a href=\"#retail/retail-r2\">local commercial R2</a> via mezzanine."
     plan_url: "/plans/PDF/BUR05.pdf"
     preview: "/plans/2x/BUR05@2x.png"
+    floor_preview: "/plans/2x/BUR05-G@2x.png"
   - name: Retail R1
     category: retail
     surface: "43.40 m² + 21.50 m² mezzanine"
@@ -287,8 +292,9 @@ units:
       - label: "Fibre"
         value: "Pré-câblage intégré"
     note: "Liaison possible avec le <a href=\"#offices/plateau-bureau-04\">plateau bureau 04</a>."
-    plan_url: "/plans/PDF/COM01.pdf"
-    preview: "/plans/2x/COM01@2x.png"
+    plan_url: "/plans/PDF/COMR1.pdf"
+    preview: "/plans/2x/COMR1@2x.png"
+    floor_preview: "/plans/2x/COMR1-G@2x.png"
   - name: Retail R2
     category: retail
     surface: "35.70 m² + 17.50 m² mezzanine"
@@ -300,5 +306,6 @@ units:
       - label: "Fibre"
         value: "Pré-câblage intégré"
     note: "Liaison possible avec le <a href=\"#offices/plateau-bureau-05\">plateau bureau 05</a>."
-    plan_url: "/plans/PDF/COM02.pdf"
-    preview: "/plans/2x/COM02@2x.png"
+    plan_url: "/plans/PDF/COMR2.pdf"
+    preview: "/plans/2x/COMR2@2x.png"
+    floor_preview: "/plans/2x/COMR2-G@2x.png"
