@@ -22,7 +22,7 @@ units:
       - Grand séjour
       - Cuisine séparée avec buanderie attenante
       - Salle de bain moderne
-      - Bonne isolation phonique
+      - Isolation phonique
       - Menuiseries double vitrage
     amenities:
       - label: "Eau & Electricité"
@@ -47,7 +47,7 @@ units:
       - Grand séjour
       - Cuisine séparée avec buanderie attenante
       - Salle de bain moderne
-      - Bonne isolation phonique
+      - Isolation phonique
       - Menuiseries double vitrage
     amenities:
       - label: "Eau & Electricité"
@@ -71,7 +71,7 @@ units:
       - Grand séjour
       - Grande cuisine
       - Salle de bain moderne
-      - Bonne isolation phonique
+      - Isolation phonique
       - Menuiseries double vitrage
     amenities:
       - label: "Eau & Electricité"
@@ -95,7 +95,7 @@ units:
       - Grand séjour
       - Cuisine séparée avec buanderie attenante
       - Salle de bain moderne
-      - Bonne isolation phonique
+      - Isolation phonique
       - Menuiseries double vitrage
     amenities:
       - label: "Eau & Electricité"
@@ -119,7 +119,7 @@ units:
       - Grand séjour
       - Grande cuisine
       - Salle de bain moderne
-      - Bonne isolation phonique
+      - Isolation phonique
       - Menuiseries double vitrage
     amenities:
       - label: "Eau & Electricité"
@@ -135,7 +135,7 @@ units:
     preview: "/plans/2x/APTE@2x.png"
   - name: Appartement Type F
     category: residences
-    surface: "102.50 m²"
+    surface: "102.50 m² + 14.40 m² terrasse"
     available: 1
     highlights:
       - Trois chambres
@@ -144,7 +144,7 @@ units:
       - Terrasses prêtes à végétaliser
       - Grand séjour
       - Salles de bain modernes
-      - Bonne isolation phonique
+      - Isolation phonique
       - Menuiseries double vitrage
     amenities:
       - label: "Eau & Electricité"
@@ -168,7 +168,7 @@ units:
       - Terrasse
       - Grand séjour
       - Salle de bain moderne
-      - Bonne isolation phonique
+      - Isolation phonique
       - Menuiseries double vitrage
     amenities:
       - label: "Eau & Electricité"
@@ -192,7 +192,7 @@ units:
       - Kitchenette équipée
       - Grand séjour
       - Salle de bain moderne
-      - Bonne isolation phonique
+      - Isolation phonique
       - Menuiseries double vitrage
     amenities:
       - label: "Eau & Electricité"
@@ -208,7 +208,7 @@ units:
     preview: "/plans/2x/STUB@2x.png"
   - name: Plateau bureau 01
     category: offices
-    surface: "123.40 m²"
+    surface: "123.40 m² + mezzanine"
     highlights:
       - Grand open-space de 123 m² modulable
     amenities:
@@ -221,7 +221,7 @@ units:
     preview: "/plans/2x/BUR01@2x.png"
   - name: Plateau bureau 02
     category: offices
-    surface: "66.80 m²"
+    surface: "66.80 m² + mezzanine"
     highlights:
       - Open-space 66 m² prêt à cloisonner
     amenities:
@@ -237,7 +237,7 @@ units:
     preview: "/plans/2x/BUR02@2x.png"
   - name: Plateau bureau 03
     category: offices
-    surface: "61.80 m²"
+    surface: "61.80 m² + mezzanine"
     highlights:
       - Plateau de 61 m² sur double hauteur
     amenities:
@@ -250,7 +250,7 @@ units:
     preview: "/plans/2x/BUR03@2x.png"
   - name: Plateau bureau 04
     category: offices
-    surface: "40.10 m²"
+    surface: "40.10 m² + mezzanine"
     highlights:
       - Plateau clair de 56 m² modulable
       - Trémie prête pour mezzanine légère
@@ -264,7 +264,7 @@ units:
     preview: "/plans/2x/BUR04@2x.png"
   - name: Plateau bureau 05
     category: offices
-    surface: "36.50 m²"
+    surface: "36.50 m² + mezzanine"
     highlights:
       - Bureau vitré sur cour arborée
       - Sanitaire privé
