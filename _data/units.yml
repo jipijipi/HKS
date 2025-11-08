@@ -33,7 +33,7 @@ units:
         value: "Place privative en sous-sol incluse"
       - label: "Fibre"
         value: "Pré-câblage intégré"
-    note: Livraison possible avec sélection mobilier intérieur/extérieur.
+    ##note: Livraison possible avec sélection mobilier intérieur/extérieur.
     plan_url: "/plans/PDF/APTA.pdf"
     preview: "/plans/2x/APTA@2x.png"
   - name: Appartement Type B
@@ -58,7 +58,7 @@ units:
         value: "Place privative en sous-sol incluse"
       - label: "Fibre"
         value: "Pré-câblage intégré"
-    note: Livraison possible avec sélection mobilier intérieur/extérieur.
+    #note: Livraison possible avec sélection mobilier intérieur/extérieur.
     plan_url: "/plans/PDF/APTB.pdf"
     preview: "/plans/2x/APTB@2x.png"
   - name: Appartement Type C
@@ -82,7 +82,7 @@ units:
         value: "Place privative en sous-sol incluse"
       - label: "Fibre"
         value: "Pré-câblage intégré"
-    note: Livraison possible avec une sélection de mobilier.
+    #note: Livraison possible avec une sélection de mobilier.
     plan_url: "/plans/PDF/APTC.pdf"
     preview: "/plans/2x/APTC@2x.png"
   - name: Appartement Type D
@@ -106,7 +106,7 @@ units:
         value: "Place privative en sous-sol incluse"
       - label: "Fibre"
         value: "Pré-câblage intégré"
-    note: Livraison possible avec une sélection de mobilier.
+    #note: Livraison possible avec une sélection de mobilier.
     plan_url: "/plans/PDF/APTD.pdf"
     preview: "/plans/2x/APTD@2x.png"
   - name: Appartement Type E
@@ -130,7 +130,7 @@ units:
         value: "Place privative en sous-sol incluse"
       - label: "Fibre"
         value: "Pré-câblage intégré"
-    note: Livraison possible avec une sélection de mobilier.
+    #note: Livraison possible avec une sélection de mobilier.
     plan_url: "/plans/PDF/APTE.pdf"
     preview: "/plans/2x/APTE@2x.png"
   - name: Appartement Type F
@@ -155,7 +155,7 @@ units:
         value: "Place privative en sous-sol incluse"
       - label: "Fibre"
         value: "Pré-câblage intégré"
-    note: Livraison possible avec une sélection de mobilier.
+    #note: Livraison possible avec une sélection de mobilier.
     plan_url: "/plans/PDF/APTF.pdf"
     preview: "/plans/2x/APTF@2x.png"
   - name: Studio Urbain S1
@@ -179,7 +179,7 @@ units:
         value: "Place privative en sous-sol incluse"
       - label: "Fibre"
         value: "Pré-câblage intégré"
-    note: Livraison possible avec une sélection de mobilier.
+    #note: Livraison possible avec une sélection de mobilier.
     plan_url: "/plans/PDF/STUA.pdf"
     preview: "/plans/2x/STUA@2x.png"
   - name: Studio Signature S2
@@ -203,7 +203,7 @@ units:
         value: "Place privative en sous-sol incluse"
       - label: "Fibre"
         value: "Pré-câblage intégré"
-    note: Livraison possible avec une sélection de mobilier.
+    #note: Livraison possible avec une sélection de mobilier.
     plan_url: "/plans/PDF/STUB.pdf"
     preview: "/plans/2x/STUB@2x.png"
   - name: Plateau bureau 01
