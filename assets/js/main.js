@@ -227,3 +227,50 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const gallery = document.querySelector("[data-interior-gallery]");
+  const lightbox = document.querySelector("[data-interior-lightbox]");
+  const image = document.querySelector("[data-interior-image]");
+  const caption = document.querySelector("[data-interior-caption]");
+  const triggers = document.querySelectorAll("[data-interior-trigger]");
+  const closeButtons = document.querySelectorAll("[data-interior-close]");
+
+  if (!gallery || !lightbox || !image || !caption || !triggers.length) return;
+
+  const openLightbox = (src, alt) => {
+    image.src = src;
+    image.alt = alt || "Photo intérieure";
+    caption.textContent = alt || "";
+    lightbox.hidden = false;
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeLightbox = () => {
+    lightbox.hidden = true;
+    image.src = "";
+    image.alt = "";
+    caption.textContent = "";
+    document.body.style.overflow = "";
+  };
+
+  triggers.forEach((trigger) => {
+    trigger.addEventListener("click", (event) => {
+      event.preventDefault();
+      const src = trigger.dataset.fullSrc || trigger.getAttribute("href");
+      const alt = trigger.dataset.alt || "";
+      if (!src) return;
+      openLightbox(src, alt);
+    });
+  });
+
+  closeButtons.forEach((button) => {
+    button.addEventListener("click", closeLightbox);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !lightbox.hidden) {
+      closeLightbox();
+    }
+  });
+});

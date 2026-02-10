@@ -1,0 +1,40 @@
+<section class="section container interior-gallery" id="interiors">
+  <div class="section__header">
+    <h2 class="section__title">{{ site.data.interior.title }}</h2>
+    <p class="section__subtitle">{{ site.data.interior.subtitle }}</p>
+  </div>
+
+  <div class="interior-gallery__grid" data-interior-gallery>
+    {% for item in site.data.interior.items %}
+      <a
+        class="interior-gallery__item"
+        href="{{ item.src | relative_url }}"
+        data-interior-trigger
+        data-full-src="{{ item.src | relative_url }}"
+        data-alt="{{ item.alt }}"
+        aria-label="Voir {{ item.alt }}"
+      >
+        <img
+          src="{{ item.thumb | relative_url }}"
+          alt="{{ item.alt }}"
+          loading="lazy"
+          decoding="async"
+        />
+      </a>
+    {% endfor %}
+  </div>
+
+  <div class="interior-lightbox" data-interior-lightbox hidden>
+    <button
+      class="interior-lightbox__backdrop"
+      type="button"
+      aria-label="Fermer la galerie"
+      data-interior-close
+    ></button>
+    <figure class="interior-lightbox__dialog" role="dialog" aria-modal="true" aria-label="Galerie intérieure">
+      <button class="interior-lightbox__close" type="button" aria-label="Fermer" data-interior-close>×</button>
+      <img class="interior-lightbox__image" src="" alt="" data-interior-image />
+      <figcaption class="interior-lightbox__caption" data-interior-caption></figcaption>
+    </figure>
+  </div>
+</section>

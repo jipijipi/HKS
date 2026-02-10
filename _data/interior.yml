@@ -1,0 +1,24 @@
+title: Intérieurs
+subtitle: Découvrez les espaces de vie de la résidence.
+items:
+  - src: /photos/interior/hall.webp
+    thumb: /photos/interior/hall-thumb.webp
+    alt: Hall d'accueil
+  - src: /photos/interior/salon.webp
+    thumb: /photos/interior/salon-thumb.webp
+    alt: Salon
+  - src: /photos/interior/cuisine.webp
+    thumb: /photos/interior/cuisine-thumb.webp
+    alt: Cuisine
+  - src: /photos/interior/chambre1.webp
+    thumb: /photos/interior/chambre1-thumb.webp
+    alt: Chambre 1
+  - src: /photos/interior/chambre2.webp
+    thumb: /photos/interior/chambre2-thumb.webp
+    alt: Chambre 2
+  - src: /photos/interior/sdb1.webp
+    thumb: /photos/interior/sdb1-thumb.webp
+    alt: Salle de bain 1
+  - src: /photos/interior/sdb2.webp
+    thumb: /photos/interior/sdb2-thumb.webp
+    alt: Salle de bain 2

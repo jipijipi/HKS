@@ -702,6 +702,98 @@ textarea:focus {
   font-weight: 600;
 }
 
+.interior-gallery {
+  scroll-margin-top: 4.5rem;
+}
+
+.interior-gallery__grid {
+  column-count: 2;
+  column-gap: 1rem;
+}
+
+.interior-gallery__item {
+  display: block;
+  margin-bottom: 1rem;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 14px 28px rgba(15, 31, 61, 0.12);
+  background: white;
+  break-inside: avoid;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.interior-gallery__item:hover,
+.interior-gallery__item:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 36px rgba(15, 31, 61, 0.16);
+}
+
+.interior-gallery__item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.interior-lightbox[hidden] {
+  display: none;
+}
+
+.interior-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.interior-lightbox__backdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  background: rgba(10, 18, 35, 0.78);
+  cursor: pointer;
+}
+
+.interior-lightbox__dialog {
+  position: relative;
+  margin: 0;
+  max-width: min(96vw, 1200px);
+  max-height: 90vh;
+  display: grid;
+  gap: 0.8rem;
+  z-index: 1;
+}
+
+.interior-lightbox__image {
+  max-width: 100%;
+  max-height: calc(90vh - 2.6rem);
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
+}
+
+.interior-lightbox__caption {
+  color: rgba(255, 255, 255, 0.92);
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.interior-lightbox__close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 0;
+  border-radius: 999px;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: white;
+  background: rgba(15, 31, 61, 0.7);
+  cursor: pointer;
+}
+
 .footer {
   background: $primary;
   color: rgba(255, 255, 255, 0.8);
@@ -766,7 +858,35 @@ textarea:focus {
     mix-blend-mode: normal;
     transform: none;
   }
+
+  .interior-gallery__grid {
+    column-count: 2;
+    column-gap: 0.75rem;
+  }
+
+  .interior-gallery__item {
+    margin-bottom: 0.75rem;
+    border-radius: 10px;
+  }
+
+  .interior-lightbox__close {
+    top: 0.35rem;
+    right: 0.35rem;
+  }
 }
+
+@media (min-width: 700px) {
+  .interior-gallery__grid {
+    column-count: 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .interior-gallery__grid {
+    column-count: 4;
+  }
+}
+
 .plans-illustration {
   display: flex;
   justify-content: center;
