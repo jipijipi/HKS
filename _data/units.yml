@@ -25,8 +25,7 @@ units:
       - Isolation phonique
       - Menuiseries double vitrage
     amenities:
-      - label: "Eau & Electricité"
-        value: "Incluses"
+
       - label: "Climatisation"
         value: "Réversible individuelle"
       - label: "Stationnement"
@@ -50,8 +49,7 @@ units:
       - Isolation phonique
       - Menuiseries double vitrage
     amenities:
-      - label: "Eau & Electricité"
-        value: "Incluses"
+
       - label: "Climatisation"
         value: "Réversible individuelle"
       - label: "Stationnement"
@@ -74,8 +72,7 @@ units:
       - Isolation phonique
       - Menuiseries double vitrage
     amenities:
-      - label: "Eau & Electricité"
-        value: "Incluses"
+
       - label: "Climatisation"
         value: "Réversible individuelle"
       - label: "Stationnement"
@@ -98,8 +95,7 @@ units:
       - Isolation phonique
       - Menuiseries double vitrage
     amenities:
-      - label: "Eau & Electricité"
-        value: "Incluses"
+
       - label: "Climatisation"
         value: "Réversible individuelle"
       - label: "Stationnement"
@@ -122,8 +118,7 @@ units:
       - Isolation phonique
       - Menuiseries double vitrage
     amenities:
-      - label: "Eau & Electricité"
-        value: "Incluses"
+
       - label: "Climatisation"
         value: "Réversible individuelle"
       - label: "Stationnement"
@@ -147,8 +142,7 @@ units:
       - Isolation phonique
       - Menuiseries double vitrage
     amenities:
-      - label: "Eau & Electricité"
-        value: "Incluses"
+
       - label: "Climatisation"
         value: "Réversible individuelle"
       - label: "Stationnement"
@@ -171,8 +165,7 @@ units:
       - Isolation phonique
       - Menuiseries double vitrage
     amenities:
-      - label: "Eau & Electricité"
-        value: "Incluses"
+
       - label: "Climatisation"
         value: "Réversible individuelle"
       - label: "Stationnement"
@@ -195,8 +188,7 @@ units:
       - Isolation phonique
       - Menuiseries double vitrage
     amenities:
-      - label: "Eau & Electricité"
-        value: "Incluses"
+
       - label: "Climatisation"
         value: "Réversible individuelle"
       - label: "Stationnement"
@@ -208,7 +200,7 @@ units:
     preview: "/plans/2x/STUB@2x.png"
   - name: Plateau bureau 01
     category: offices
-    surface: "123.40 m² + mezzanine"
+    surface: "123.40 m² + mezzanine (à venir)"
     highlights:
       - Grand open-space de 123 m² modulable
     amenities:
@@ -222,7 +214,7 @@ units:
     floor_preview: "/plans/2x/BUR01-G@2x.png"
   - name: Plateau bureau 02
     category: offices
-    surface: "66.80 m² + mezzanine"
+    surface: "66.80 m² + mezzanine (à venir)"
     highlights:
       - Open-space 66 m² prêt à cloisonner
     amenities:
@@ -239,7 +231,7 @@ units:
     floor_preview: "/plans/2x/BUR02-G@2x.png"
   - name: Plateau bureau 03
     category: offices
-    surface: "61.80 m² + mezzanine"
+    surface: "61.80 m² + mezzanine (à venir)"
     highlights:
       - Plateau de 61 m² sur double hauteur
     amenities:
@@ -253,7 +245,7 @@ units:
     floor_preview: "/plans/2x/BUR03-G@2x.png"
   - name: Plateau bureau 04
     category: offices
-    surface: "40.10 m² + mezzanine"
+    surface: "40.10 m² + mezzanine (à venir)"
     highlights:
       - Plateau clair de 56 m² modulable
       - Trémie prête pour mezzanine légère
@@ -268,7 +260,7 @@ units:
     floor_preview: "/plans/2x/BUR04-G@2x.png"
   - name: Plateau bureau 05
     category: offices
-    surface: "36.50 m² + mezzanine"
+    surface: "36.50 m² + mezzanine (à venir)"
     highlights:
       - Bureau vitré sur cour arborée
       - Sanitaire privé
