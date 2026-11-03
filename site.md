@@ -34,5 +34,4 @@ email : sicorep.imo@gmail.com
 
 next :
 
- - click to dl plan
  - Urgency stickers / inventory
