@@ -5,15 +5,15 @@
   <button type="button" class="unit-gallery__hero" data-gallery-open aria-label="{% if media.vimeo %}Lire la vidéo de{% else %}Agrandir les visuels de{% endif %} {{ include.unit.name | escape }}">
     <img data-gallery-cover data-src="{{ cover.src | replace: '.jpg', '-medium.jpg' | relative_url }}" alt="{{ cover.caption | escape }} — rendu d’illustration" width="1200" height="800" decoding="async" />
     {% if media.vimeo %}<span class="unit-gallery__play" data-gallery-play aria-hidden="true"></span>{% endif %}
-    <span class="unit-gallery__expand" data-gallery-action {% if media.vimeo %}hidden{% endif %}>Agrandir ↗</span>
+    <span class="unit-gallery__expand" data-gallery-action {% if media.vimeo %}hidden{% endif %}>Agrandir {% include icon.html name='arrow-up-right' %}</span>
   </button>
   <div class="unit-gallery__bar">
     <span data-gallery-caption>{{ cover.caption }}</span>
-    <span>{{ media.photos.size }} visuels{% if media.vimeo %} · <button type="button" class="unit-gallery__video-link" data-gallery-video="{{ media.vimeo }}">Voir la vidéo ▶</button>{% endif %}</span>
+    <span>{{ media.photos.size }} visuels{% if media.vimeo %} · <button type="button" class="unit-gallery__video-link" data-gallery-video="{{ media.vimeo }}">Voir la vidéo {% include icon.html name='play' %}</button>{% endif %}</span>
   </div>
   <div class="unit-gallery__thumbs" aria-label="Visuels de {{ include.unit.name | escape }}">
     {% if media.vimeo %}
-    <button type="button" class="unit-gallery__video" data-gallery-video="{{ media.vimeo }}" aria-label="Voir la vidéo de {{ include.unit.name | escape }}"><span aria-hidden="true">▶</span> Vidéo</button>
+    <button type="button" class="unit-gallery__video" data-gallery-video="{{ media.vimeo }}" aria-label="Voir la vidéo de {{ include.unit.name | escape }}">{% include icon.html name='play' %} Vidéo</button>
     {% endif %}
     {% for photo in media.photos %}
     <button type="button" class="unit-gallery__thumb{% if forloop.first and media.vimeo == nil %} is-active{% endif %}" data-gallery-photo data-full="{{ photo.src | relative_url }}" data-medium="{{ photo.src | replace: '.jpg', '-medium.jpg' | relative_url }}" data-caption="{{ photo.caption | escape }}" aria-label="{{ photo.caption | escape }}" aria-pressed="{% if forloop.first and media.vimeo == nil %}true{% else %}false{% endif %}">

@@ -125,7 +125,7 @@
               <p class="plan-card__note">{{ unit.note }}</p>
             {% endif %}
             <div class="plan-card__visit">
-              <a class="btn btn--primary" href="#contact" data-unit-visit="{{ unit.name | escape }}" aria-label="Organiser une visite — {{ unit.name | escape }}">Organiser une visite <span aria-hidden="true">↗</span></a>
+              <a class="btn btn--primary" href="#contact" data-unit-visit="{{ unit.name | escape }}" aria-label="Organiser une visite — {{ unit.name | escape }}">Organiser une visite {% include icon.html name='arrow-up-right' %}</a>
             </div>
           </article>
         {% endfor %}

@@ -1049,3 +1049,11 @@ textarea:focus {
   .unit-pagination__position { grid-row: 1; grid-column: 1 / -1; }
   .unit-pagination button { font-size: 0.78rem; padding: 0.8rem 0.65rem; }
 }
+
+// Drawn icons inherit the button color and never use platform emoji glyphs.
+.ui-icon { display: inline-block; flex: 0 0 auto; width: 1.05em; height: 1.05em; vertical-align: -0.15em; }
+.unit-pagination button, .unit-viewer__navigation button, .hero__motion,
+.unit-gallery__expand, .unit-gallery__video-link {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem;
+}
+.unit-gallery__video > .ui-icon { justify-self: center; }

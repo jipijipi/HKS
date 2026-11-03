@@ -5,9 +5,9 @@
   </div>
   <div class="unit-viewer__stage" data-viewer-stage></div>
   <div class="unit-viewer__navigation">
-    <button type="button" data-viewer-prev aria-label="Visuel précédent">←</button>
+    <button type="button" data-viewer-prev aria-label="Visuel précédent">{% include icon.html name='arrow-left' %}</button>
     <span data-viewer-caption aria-live="polite"></span>
-    <button type="button" data-viewer-next aria-label="Visuel suivant">→</button>
+    <button type="button" data-viewer-next aria-label="Visuel suivant">{% include icon.html name='arrow-right' %}</button>
   </div>
   {% include visual-disclaimer.html %}
 </dialog>

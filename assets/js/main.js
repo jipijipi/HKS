@@ -1,3 +1,25 @@
+// Inline SVGs keep controls consistent across platform fonts and emoji renderers.
+const setControlLabel = (control, text, icon, before = false) => {
+  const paths = {
+    "arrow-up-right": "M6 18 18 6M6 6h12v12",
+    "arrow-left": "M19 12H5m6-6-6 6 6 6",
+    "arrow-right": "M5 12h14m-6-6 6 6-6 6",
+    play: "m9 5 11 7-11 7Z",
+    pause: "M9 5v14M15 5v14"
+  };
+  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  Object.entries({ class: "ui-icon", width: 18, height: 18, viewBox: "0 0 24 24",
+    fill: "none", stroke: "currentColor", "stroke-width": 1.6,
+    "stroke-linecap": "round", "stroke-linejoin": "round", "aria-hidden": "true", focusable: "false"
+  }).forEach(([name, value]) => svg.setAttribute(name, value));
+  const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+  path.setAttribute("d", paths[icon]);
+  if (icon === "play") { path.setAttribute("fill", "currentColor"); path.setAttribute("stroke", "none"); }
+  svg.append(path);
+  const label = document.createTextNode(text);
+  control.replaceChildren(...(before ? [svg, label] : [label, svg]));
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   const browsers = document.querySelectorAll("[data-unit-browser]");
   const statLinks = document.querySelectorAll("[data-stat-link], [data-unit-link]");
@@ -71,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         const label = chip.dataset.category !== categoryId
           ? `Découvrir : ${categoryLabel(chip.dataset.category)}` : unitName(chip);
-        button.textContent = direction ? `${label} →` : `← ${label}`;
+        setControlLabel(button, label, direction ? "arrow-right" : "arrow-left", !direction);
       });
     };
 
@@ -451,7 +473,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const play = gallery.querySelector("[data-gallery-play]");
         if (play) play.hidden = true;
         const action = gallery.querySelector("[data-gallery-action]");
-        action.textContent = "Agrandir ↗";
+        setControlLabel(action, "Agrandir", "arrow-up-right");
         action.hidden = false;
         const cover = gallery.querySelector("[data-gallery-cover]");
         cover.src = button.dataset.medium;
@@ -486,7 +508,7 @@ document.addEventListener("DOMContentLoaded", () => {
   video.muted = true;
 
   const updateControl = () => {
-    control.textContent = video.paused ? "Lire l’animation ▶" : "Pause Ⅱ";
+    setControlLabel(control, video.paused ? "Lire l’animation" : "Pause", video.paused ? "play" : "pause");
     control.setAttribute("aria-label", video.paused ? "Lire l’animation" : "Mettre l’animation en pause");
   };
   const start = () => {
