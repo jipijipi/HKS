@@ -1,7 +1,7 @@
 <section class="section container">
   <div class="section__header">
-    <h2 class="section__title">Plans & documents</h2>
-    <p class="section__subtitle">Explorez chaque typologie et récupérez les plans détaillés en un clic.</p>
+    <h2 class="section__title">Découvrez nos biens</h2>
+    <p class="section__subtitle">Explorez les espaces, imaginez votre intérieur et consultez les plans de chaque typologie.</p>
   </div>
   <figure class="plans-illustration">
     <img src="{{ '/photos/facade-line.png' | relative_url }}" alt="Illustration linéaire de la Résidence Courlis" loading="lazy" />
@@ -70,6 +70,7 @@
           >
             <span class="plan-card__tag">{{ category.label }}</span>
             <h3 class="plan-card__title">{{ unit.name }}</h3>
+            {% if unit.media %}{% include unit-gallery.html unit=unit %}{% endif %}
             <div class="plan-card__metrics">
               {% if unit.surface %}
                 <span class="plan-card__metric plan-card__metric--surface">{{ unit.surface }}</span>
@@ -125,4 +126,5 @@
       </div>
     {% endfor %}
   </div>
+  {% include unit-viewer.html %}
 </section>

@@ -1,0 +1,13 @@
+<dialog class="unit-viewer" data-unit-viewer aria-labelledby="unit-viewer-title">
+  <div class="unit-viewer__header">
+    <span id="unit-viewer-title"></span>
+    <button type="button" data-viewer-close aria-label="Fermer la galerie">Fermer ×</button>
+  </div>
+  <div class="unit-viewer__stage" data-viewer-stage></div>
+  <div class="unit-viewer__navigation">
+    <button type="button" data-viewer-prev aria-label="Visuel précédent">←</button>
+    <span data-viewer-caption aria-live="polite"></span>
+    <button type="button" data-viewer-next aria-label="Visuel suivant">→</button>
+  </div>
+  {% include visual-disclaimer.html %}
+</dialog>

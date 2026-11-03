@@ -24,6 +24,7 @@
     {% endfor %}
   </div>
 
+  {% include visual-disclaimer.html %}
   <div class="interior-lightbox" data-interior-lightbox hidden>
     <button
       class="interior-lightbox__backdrop"
@@ -35,6 +36,7 @@
       <button class="interior-lightbox__close" type="button" aria-label="Fermer" data-interior-close>×</button>
       <img class="interior-lightbox__image" src="" alt="" data-interior-image />
       <figcaption class="interior-lightbox__caption" data-interior-caption></figcaption>
+      {% include visual-disclaimer.html %}
     </figure>
   </div>
 </section>

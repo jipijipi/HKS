@@ -58,3 +58,17 @@ Review the output visually before adding it to Git. These exports do not automat
 add photos to the website; gallery entries still need to be connected to the unit data.
 To regenerate, move the existing production folder aside first, run the same command,
 then review the new exports before discarding the previous ones.
+
+## Unit galleries and videos
+
+`_data/units.yml` connects each residential unit to its gallery using the `media` key.
+`_data/unit_media.json` defines the ordered images, French captions and optional
+`vimeo` video ID for each gallery. The first photo is the cover. For additional
+videos, add `"vimeo": "YOUR_VIDEO_ID"` to the matching gallery entry, following
+the apartment A example. Embedding must be permitted in the video's Vimeo settings.
+
+Gallery images load when their unit is visible. Full-size JPEGs and Vimeo players
+load only when opened; closing the viewer removes the player and stops playback.
+Title, author and portrait are requested hidden, with standard playback controls
+retained. Vimeo may limit appearance customization depending on the account plan.
+The shared disclaimer lives in `_includes/visual-disclaimer.html`.

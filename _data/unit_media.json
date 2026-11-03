@@ -1,0 +1,242 @@
+{
+  "apartment-a": {
+    "photos": [
+      {
+        "src": "/photos/units/apartment-a/a-salon-01.jpg",
+        "caption": "Séjour — vue 01"
+      },
+      {
+        "src": "/photos/units/apartment-a/a-salon-02.jpg",
+        "caption": "Séjour — vue 02"
+      },
+      {
+        "src": "/photos/units/apartment-a/a-chambre-enfants.jpg",
+        "caption": "Chambre enfants"
+      },
+      {
+        "src": "/photos/units/apartment-a/a-chambre-parentale.jpg",
+        "caption": "Chambre parentale"
+      },
+      {
+        "src": "/photos/units/apartment-a/a-cuisine.jpg",
+        "caption": "Cuisine"
+      },
+      {
+        "src": "/photos/units/apartment-a/a-salle-de-bain.jpg",
+        "caption": "Salle de bain"
+      },
+      {
+        "src": "/photos/units/apartment-a/a-terrasse.jpg",
+        "caption": "Terrasse"
+      }
+    ],
+    "vimeo": "1242771672"
+  },
+  "apartment-b": {
+    "photos": [
+      {
+        "src": "/photos/units/apartment-b/b-salon.jpg",
+        "caption": "Séjour"
+      },
+      {
+        "src": "/photos/units/apartment-b/b-chambre-enfants.jpg",
+        "caption": "Chambre enfants"
+      },
+      {
+        "src": "/photos/units/apartment-b/b-chambre-parentale-01.jpg",
+        "caption": "Chambre parentale — vue 01"
+      },
+      {
+        "src": "/photos/units/apartment-b/b-chambre-parentale-02.jpg",
+        "caption": "Chambre parentale — vue 02"
+      },
+      {
+        "src": "/photos/units/apartment-b/b-cuisine.jpg",
+        "caption": "Cuisine"
+      },
+      {
+        "src": "/photos/units/apartment-b/b-salle-de-bain.jpg",
+        "caption": "Salle de bain"
+      }
+    ],
+    "vimeo": "1242777388"
+  },
+  "apartment-c": {
+    "photos": [
+      {
+        "src": "/photos/units/apartment-c/c-salon.jpg",
+        "caption": "Séjour"
+      },
+      {
+        "src": "/photos/units/apartment-c/c-chambre-enfants-01.jpg",
+        "caption": "Chambre enfants — vue 01"
+      },
+      {
+        "src": "/photos/units/apartment-c/c-chambre-enfants-02.jpg",
+        "caption": "Chambre enfants — vue 02"
+      },
+      {
+        "src": "/photos/units/apartment-c/c-chambre-parentale-01.jpg",
+        "caption": "Chambre parentale — vue 01"
+      },
+      {
+        "src": "/photos/units/apartment-c/c-chambre-parentale-02.jpg",
+        "caption": "Chambre parentale — vue 02"
+      },
+      {
+        "src": "/photos/units/apartment-c/c-cuisine.jpg",
+        "caption": "Cuisine"
+      },
+      {
+        "src": "/photos/units/apartment-c/c-salle-de-bain-parentale.jpg",
+        "caption": "Salle de bain parentale"
+      },
+      {
+        "src": "/photos/units/apartment-c/c-salle-de-bain.jpg",
+        "caption": "Salle de bain"
+      }
+    ],
+    "vimeo": "1242777428"
+  },
+  "apartment-d": {
+    "photos": [
+      {
+        "src": "/photos/units/apartment-d/d-salon.jpg",
+        "caption": "Séjour"
+      },
+      {
+        "src": "/photos/units/apartment-d/d-chambre-enfants.jpg",
+        "caption": "Chambre enfants"
+      },
+      {
+        "src": "/photos/units/apartment-d/d-chambre-parentale.jpg",
+        "caption": "Chambre parentale"
+      },
+      {
+        "src": "/photos/units/apartment-d/d-cuisine.jpg",
+        "caption": "Cuisine"
+      },
+      {
+        "src": "/photos/units/apartment-d/d-salle-de-bain-parentale.jpg",
+        "caption": "Salle de bain parentale"
+      },
+      {
+        "src": "/photos/units/apartment-d/d-salle-de-bain.jpg",
+        "caption": "Salle de bain"
+      }
+    ],
+    "vimeo": "1242777469"
+  },
+  "apartment-e": {
+    "photos": [
+      {
+        "src": "/photos/units/apartment-e/e-salon.jpg",
+        "caption": "Séjour"
+      },
+      {
+        "src": "/photos/units/apartment-e/e-chambre-enfants.jpg",
+        "caption": "Chambre enfants"
+      },
+      {
+        "src": "/photos/units/apartment-e/e-chambre-parentale.jpg",
+        "caption": "Chambre parentale"
+      },
+      {
+        "src": "/photos/units/apartment-e/e-cuisine.jpg",
+        "caption": "Cuisine"
+      },
+      {
+        "src": "/photos/units/apartment-e/e-salle-de-bain-parentale.jpg",
+        "caption": "Salle de bain parentale"
+      },
+      {
+        "src": "/photos/units/apartment-e/e-salle-de-bain.jpg",
+        "caption": "Salle de bain"
+      }
+    ],
+    "vimeo": "1242777494"
+  },
+  "apartment-f": {
+    "photos": [
+      {
+        "src": "/photos/units/apartment-f/f-salon.jpg",
+        "caption": "Séjour"
+      },
+      {
+        "src": "/photos/units/apartment-f/f-chambre-01.jpg",
+        "caption": "Chambre — vue 01"
+      },
+      {
+        "src": "/photos/units/apartment-f/f-chambre-02.jpg",
+        "caption": "Chambre — vue 02"
+      },
+      {
+        "src": "/photos/units/apartment-f/f-chambre-parentale-01.jpg",
+        "caption": "Chambre parentale — vue 01"
+      },
+      {
+        "src": "/photos/units/apartment-f/f-chambre-parentale-02.jpg",
+        "caption": "Chambre parentale — vue 02"
+      },
+      {
+        "src": "/photos/units/apartment-f/f-cuisine.jpg",
+        "caption": "Cuisine"
+      },
+      {
+        "src": "/photos/units/apartment-f/f-salle-de-bain-parentale-01.jpg",
+        "caption": "Salle de bain parentale — vue 01"
+      },
+      {
+        "src": "/photos/units/apartment-f/f-salle-de-bain-parentale-02.jpg",
+        "caption": "Salle de bain parentale — vue 02"
+      },
+      {
+        "src": "/photos/units/apartment-f/f-salle-de-bain.jpg",
+        "caption": "Salle de bain"
+      }
+    ],
+    "vimeo": "1242780329"
+  },
+  "studio-s1": {
+    "photos": [
+      {
+        "src": "/photos/units/studio-s1/s1-salon.jpg",
+        "caption": "Séjour"
+      },
+      {
+        "src": "/photos/units/studio-s1/s1-chambre.jpg",
+        "caption": "Chambre"
+      },
+      {
+        "src": "/photos/units/studio-s1/s1-cuisine.jpg",
+        "caption": "Cuisine"
+      },
+      {
+        "src": "/photos/units/studio-s1/s1-salle-de-bain.jpg",
+        "caption": "Salle de bain"
+      }
+    ],
+    "vimeo": "1242780389"
+  },
+  "studio-s2": {
+    "photos": [
+      {
+        "src": "/photos/units/studio-s2/s2-salon.jpg",
+        "caption": "Séjour"
+      },
+      {
+        "src": "/photos/units/studio-s2/s2-chambre.jpg",
+        "caption": "Chambre"
+      },
+      {
+        "src": "/photos/units/studio-s2/s2-cuisine.jpg",
+        "caption": "Cuisine"
+      },
+      {
+        "src": "/photos/units/studio-s2/s2-salle-de-bain.jpg",
+        "caption": "Salle de bain"
+      }
+    ],
+    "vimeo": "1242780538"
+  }
+}

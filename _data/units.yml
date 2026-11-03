@@ -13,6 +13,7 @@ categories:
     description: Locaux en rez-de-chaussée bénéficiant d’une forte visibilité et de flux constants.
 units:
   - name: Appartement Type A
+    media: apartment-a
     category: residences
     surface: "66.30 m² + 51.40 m² terrasse"
     available: 1
@@ -36,6 +37,7 @@ units:
     plan_url: "/plans/PDF/APTA.pdf"
     preview: "/plans/2x/APTA@2x.png"
   - name: Appartement Type B
+    media: apartment-b
     category: residences
     surface: "75.00 m² + 71.60 m² terrasse"
     available: 1
@@ -60,6 +62,7 @@ units:
     plan_url: "/plans/PDF/APTB.pdf"
     preview: "/plans/2x/APTB@2x.png"
   - name: Appartement Type C
+    media: apartment-c
     category: residences
     surface: "97.30 m²"
     available: 3
@@ -83,6 +86,7 @@ units:
     plan_url: "/plans/PDF/APTC.pdf"
     preview: "/plans/2x/APTC@2x.png"
   - name: Appartement Type D
+    media: apartment-d
     category: residences
     surface: "72.80 m²"
     available: 3
@@ -106,6 +110,7 @@ units:
     plan_url: "/plans/PDF/APTD.pdf"
     preview: "/plans/2x/APTD@2x.png"
   - name: Appartement Type E
+    media: apartment-e
     category: residences
     surface: "78.50 m²"
     available: 3
@@ -129,6 +134,7 @@ units:
     plan_url: "/plans/PDF/APTE.pdf"
     preview: "/plans/2x/APTE@2x.png"
   - name: Appartement Type F
+    media: apartment-f
     category: residences
     surface: "102.50 m² + 14.40 m² terrasse"
     available: 1
@@ -153,6 +159,7 @@ units:
     plan_url: "/plans/PDF/APTF.pdf"
     preview: "/plans/2x/APTF@2x.png"
   - name: Studio Urbain S1
+    media: studio-s1
     category: studios
     surface: "54.00 m² + 7.50 m² terrasse"
     available: 1
@@ -176,6 +183,7 @@ units:
     plan_url: "/plans/PDF/STUA.pdf"
     preview: "/plans/2x/STUA@2x.png"
   - name: Studio Signature S2
+    media: studio-s2
     category: studios
     surface: "70.20 m² + 6.90 m² terrasse"
     available: 1
