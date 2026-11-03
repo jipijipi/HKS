@@ -17,9 +17,6 @@ Contact
 Adresse 33°33'52.4"N 7°38'29.6"W
 
 
-TODO :
-
-Isoler les plans des types d'appartements
 
 
 Argumentaire : 
@@ -37,12 +34,4 @@ email : sicorep.imo@gmail.com
 
 next :
 
-eau + elec dans charges
-meublé a la demande
-
-1 page par appartement
-
-Remove big pdf
-
-orientation
-logo + copyright sur pdf
+ - click to dl plan
