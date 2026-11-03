@@ -1,24 +1,12 @@
-title: Intérieurs
-subtitle: Découvrez les espaces de vie de la résidence.
+title: L’esprit du 25
+subtitle: Une inspiration Art Déco, des espaces lumineux et une invitation à se sentir chez soi.
 items:
-  - src: /photos/interior/hall.webp
-    thumb: /photos/interior/hall-thumb.webp
+  - src: /photos/interior/hall.jpg
+    thumb: /photos/interior/hall-medium.jpg
     alt: Hall d'accueil
-  - src: /photos/interior/salon.webp
-    thumb: /photos/interior/salon-thumb.webp
-    alt: Salon
-  - src: /photos/interior/cuisine.webp
-    thumb: /photos/interior/cuisine-thumb.webp
-    alt: Cuisine
-  - src: /photos/interior/chambre1.webp
-    thumb: /photos/interior/chambre1-thumb.webp
-    alt: Chambre 1
-  - src: /photos/interior/chambre2.webp
-    thumb: /photos/interior/chambre2-thumb.webp
-    alt: Chambre 2
-  - src: /photos/interior/sdb1.webp
-    thumb: /photos/interior/sdb1-thumb.webp
-    alt: Salle de bain 1
-  - src: /photos/interior/sdb2.webp
-    thumb: /photos/interior/sdb2-thumb.webp
-    alt: Salle de bain 2
+  - src: /photos/units/apartment-a/a-salon-01.jpg
+    thumb: /photos/units/apartment-a/a-salon-01-medium.jpg
+    alt: Des espaces pour se retrouver
+  - src: /photos/units/apartment-a/a-terrasse.jpg
+    thumb: /photos/units/apartment-a/a-terrasse-medium.jpg
+    alt: Une ouverture sur l’extérieur

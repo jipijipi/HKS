@@ -78,3 +78,15 @@ Video playback starts on opening, subject to the browser's autoplay restrictions
 Title, author and portrait are requested hidden, with standard playback controls
 retained. Vimeo may limit appearance customization depending on the account plan.
 The shared disclaimer lives in `_includes/visual-disclaimer.html`.
+
+## Opening section and hero loop
+
+`_data/interior.yml` selects the three images shown in “L’esprit du 25”, immediately
+after the hero. The first image occupies the large tile; the other two accompany it.
+
+Replace `photos/hero-loop.mp4` to update the hero animation. Use a short, silent
+H.264 MP4 with web playback metadata (`-movflags +faststart`). The existing facade
+image remains the fallback. Video loading starts after the page load event, and
+the fade begins only when playback starts. Reduced-motion and data-saving settings
+keep the static image. The pause control preserves the visitor's choice, and the
+video pauses when off-screen or when the browser tab is hidden.

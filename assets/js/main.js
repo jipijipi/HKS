@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const browsers = document.querySelectorAll("[data-unit-browser]");
-  const statLinks = document.querySelectorAll("[data-stat-link]");
+  const statLinks = document.querySelectorAll("[data-stat-link], [data-unit-link]");
 
   statLinks.forEach((link) => {
     link.addEventListener("click", (event) => {
@@ -250,6 +250,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const caption = document.querySelector("[data-interior-caption]");
   const triggers = document.querySelectorAll("[data-interior-trigger]");
   const closeButtons = document.querySelectorAll("[data-interior-close]");
+  let interiorTrigger;
+  let previousOverflow = "";
 
   if (!gallery || !lightbox || !image || !caption || !triggers.length) return;
 
@@ -258,7 +260,9 @@ document.addEventListener("DOMContentLoaded", () => {
     image.alt = alt || "Photo intérieure";
     caption.textContent = alt || "";
     lightbox.hidden = false;
+    previousOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
+    lightbox.querySelector(".interior-lightbox__close").focus();
   };
 
   const closeLightbox = () => {
@@ -266,7 +270,8 @@ document.addEventListener("DOMContentLoaded", () => {
     image.src = "";
     image.alt = "";
     caption.textContent = "";
-    document.body.style.overflow = "";
+    document.body.style.overflow = previousOverflow;
+    interiorTrigger?.focus({ preventScroll: true });
   };
 
   triggers.forEach((trigger) => {
@@ -275,6 +280,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const src = trigger.dataset.fullSrc || trigger.getAttribute("href");
       const alt = trigger.dataset.alt || "";
       if (!src) return;
+      interiorTrigger = trigger;
       openLightbox(src, alt);
     });
   });
@@ -397,7 +403,11 @@ document.addEventListener("DOMContentLoaded", () => {
       button.addEventListener("click", () => {
         selectedIndex = photoIndex + (hasVideo ? 1 : 0);
         hero.setAttribute("aria-label", `Agrandir les visuels de ${gallery.dataset.title}`);
-        gallery.querySelector("[data-gallery-action]").textContent = "Agrandir ↗";
+        const play = gallery.querySelector("[data-gallery-play]");
+        if (play) play.hidden = true;
+        const action = gallery.querySelector("[data-gallery-action]");
+        action.textContent = "Agrandir ↗";
+        action.hidden = false;
         const cover = gallery.querySelector("[data-gallery-cover]");
         cover.src = button.dataset.medium;
         cover.removeAttribute("data-src");
@@ -415,4 +425,103 @@ document.addEventListener("DOMContentLoaded", () => {
       video.addEventListener("click", () => open(gallery, 0, video));
     });
   });
+});
+
+// The facade stays visible until real playback begins; no video request for reduced motion.
+document.addEventListener("DOMContentLoaded", () => {
+  const video = document.querySelector("[data-hero-video]");
+  const control = document.querySelector("[data-hero-motion]");
+  if (!video || !control) return;
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const saveData = Boolean(navigator.connection?.saveData);
+  let userPaused = false;
+  let visible = true;
+  let ready = document.readyState === "complete";
+  let failed = false;
+  video.muted = true;
+
+  const updateControl = () => {
+    control.textContent = video.paused ? "Lire l’animation ▶" : "Pause Ⅱ";
+    control.setAttribute("aria-label", video.paused ? "Lire l’animation" : "Mettre l’animation en pause");
+  };
+  const start = () => {
+    if (!ready || failed || reducedMotion.matches || saveData || userPaused || !visible || document.hidden) return;
+    if (!video.hasAttribute("src")) video.src = video.dataset.src;
+    control.hidden = false;
+    video.play().catch(() => {
+      video.classList.remove("is-playing");
+      updateControl();
+    });
+  };
+  video.addEventListener("playing", () => {
+    video.classList.add("is-playing");
+    updateControl();
+  });
+  video.addEventListener("pause", updateControl);
+  video.addEventListener("error", () => {
+    failed = true;
+    video.classList.remove("is-playing");
+    control.hidden = true;
+  });
+  control.addEventListener("click", () => {
+    if (video.paused) {
+      userPaused = false;
+      start();
+    } else {
+      userPaused = true;
+      video.pause();
+    }
+  });
+  const observer = new IntersectionObserver(entries => {
+    visible = entries[0].isIntersecting;
+    if (visible) start(); else video.pause();
+  });
+  observer.observe(video.closest(".hero"));
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) video.pause(); else start();
+  });
+  reducedMotion.addEventListener("change", () => {
+    if (reducedMotion.matches) {
+      video.pause();
+      video.classList.remove("is-playing");
+      control.hidden = true;
+    } else start();
+  });
+  if (ready) start();
+  else window.addEventListener("load", () => { ready = true; start(); }, { once: true });
+});
+
+// Keep the unit context visible in the enquiry and preserve any message already drafted.
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("[data-web3forms]");
+  if (!form) return;
+  const context = form.querySelector("[data-contact-unit]");
+  const unit = form.elements.namedItem("bien");
+  const message = form.elements.namedItem("message");
+  const subject = form.elements.namedItem("subject");
+  const defaultSubject = subject.value;
+  let suggestedMessage = "";
+  const clear = () => {
+    context.hidden = true;
+    unit.value = "";
+    subject.value = defaultSubject;
+    if (message.value === suggestedMessage) message.value = "";
+    suggestedMessage = "";
+  };
+  document.querySelectorAll("[data-unit-visit]").forEach(link => {
+    link.addEventListener("click", () => {
+      const name = link.dataset.unitVisit;
+      unit.value = name;
+      context.hidden = false;
+      subject.value = `Demande de visite — ${name} — Résidence LE 25`;
+      const nextMessage = `Bonjour, je souhaite organiser une visite pour le bien suivant : ${name}. Merci de me contacter pour convenir d’un rendez-vous.`;
+      if (!message.value.trim() || message.value === suggestedMessage) {
+        message.value = nextMessage;
+        suggestedMessage = nextMessage;
+      }
+      requestAnimationFrame(() => form.elements.namedItem("name").focus({ preventScroll: true }));
+    });
+  });
+  form.querySelector("[data-clear-unit]").addEventListener("click", clear);
+  form.addEventListener("reset", () => { context.hidden = true; suggestedMessage = ""; });
 });

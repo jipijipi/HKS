@@ -1,11 +1,8 @@
 <section class="section container">
   <div class="section__header">
-    <h2 class="section__title">Découvrez nos biens</h2>
+    <h2 class="section__title">Découvrez les biens</h2>
     <p class="section__subtitle">Explorez les espaces, imaginez votre intérieur et consultez les plans de chaque typologie.</p>
   </div>
-  <figure class="plans-illustration">
-    <img src="{{ '/photos/facade-line.png' | relative_url }}" alt="Illustration linéaire de la Résidence Courlis" loading="lazy" />
-  </figure>
 <!--   <div class="card">
     <p><strong>Plan autorisé complet</strong> — PDF haute résolution incluant résidences, bureaux et commerces.</p>
     <p>
@@ -104,14 +101,18 @@
             <div class="plan-card__previews">
               <div class="plan-card__preview{% if unit.preview %} has-image{% endif %}">
                 {% if unit.preview %}
+                  {% if unit.plan_url %}<a class="plan-card__download" href="{{ unit.plan_url | relative_url }}" download aria-label="Télécharger le plan PDF — {{ unit.name | escape }}">{% endif %}
                   <img src="{{ unit.preview | relative_url }}" alt="Plan {{ unit.name }}" loading="lazy" />
+                  {% if unit.plan_url %}</a>{% endif %}
                 {% else %}
                   Aperçu plan à intégrer
                 {% endif %}
               </div>
               {% if unit.floor_preview %}
                 <div class="plan-card__preview has-image">
+                  {% if unit.plan_url %}<a class="plan-card__download" href="{{ unit.plan_url | relative_url }}" download aria-label="Télécharger le plan PDF — {{ unit.name | escape }}, rez-de-chaussée">{% endif %}
                   <img src="{{ unit.floor_preview | relative_url }}" alt="Plan {{ unit.name }} - rez-de-chaussée" loading="lazy" />
+                  {% if unit.plan_url %}</a>{% endif %}
                 </div>
               {% endif %}
             </div>
@@ -121,6 +122,9 @@
             {% if unit.note %}
               <p class="plan-card__note">{{ unit.note }}</p>
             {% endif %}
+            <div class="plan-card__visit">
+              <a class="btn btn--primary" href="#contact" data-unit-visit="{{ unit.name | escape }}" aria-label="Organiser une visite — {{ unit.name | escape }}">Organiser une visite <span aria-hidden="true">↗</span></a>
+            </div>
           </article>
         {% endfor %}
       </div>

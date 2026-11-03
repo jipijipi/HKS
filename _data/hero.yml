@@ -7,6 +7,6 @@ ctas:
   - label: Planifier une visite
     href: "#contact"
     style: btn--primary
-  - label: Voir les plans
-    href: "#plans"
+  - label: Voir les espaces
+    href: "#residences/appartement-type-a"
     style: btn--ghost

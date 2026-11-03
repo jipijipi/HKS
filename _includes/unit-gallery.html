@@ -4,7 +4,8 @@
 <div class="unit-gallery" data-unit-gallery data-title="{{ include.unit.name | escape }}">
   <button type="button" class="unit-gallery__hero" data-gallery-open aria-label="{% if media.vimeo %}Lire la vidéo de{% else %}Agrandir les visuels de{% endif %} {{ include.unit.name | escape }}">
     <img data-gallery-cover data-src="{{ cover.src | replace: '.jpg', '-medium.jpg' | relative_url }}" alt="{{ cover.caption | escape }} — rendu d’illustration" width="1200" height="800" decoding="async" />
-    <span class="unit-gallery__expand" data-gallery-action>{% if media.vimeo %}▶ Lire la vidéo{% else %}Agrandir ↗{% endif %}</span>
+    {% if media.vimeo %}<span class="unit-gallery__play" data-gallery-play aria-hidden="true"></span>{% endif %}
+    <span class="unit-gallery__expand" data-gallery-action {% if media.vimeo %}hidden{% endif %}>Agrandir ↗</span>
   </button>
   <div class="unit-gallery__bar">
     <span data-gallery-caption>{{ cover.caption }}</span>

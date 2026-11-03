@@ -1,4 +1,5 @@
 <section class="hero">
+  <video class="hero__video" data-hero-video data-src="{{ '/photos/hero-loop.mp4' | relative_url }}" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
   <div class="hero__inner">
     <figure class="hero__mark">
       <img src="{{ '/photos/logo-courlis-w.svg' | relative_url }}" alt="" aria-hidden="true" />
@@ -11,8 +12,9 @@
     <p class="hero__subtitle">{{ site.data.hero.subtitle }}</p>
     <div class="cta-group">
       {% for cta in site.data.hero.ctas %}
-        <a class="btn {{ cta.style }}" href="{{ cta.href }}" {% if cta.external %}target="_blank" rel="noopener"{% endif %}>{{ cta.label }}</a>
+        <a class="btn {{ cta.style }}" href="{{ cta.href }}" {% if cta.href contains '/' %}{% unless cta.external %}data-unit-link{% endunless %}{% endif %} {% if cta.external %}target="_blank" rel="noopener"{% endif %}>{{ cta.label }}</a>
       {% endfor %}
     </div>
   </div>
+  <button class="hero__motion" type="button" data-hero-motion hidden aria-label="Mettre l’animation en pause">Pause <span aria-hidden="true">Ⅱ</span></button>
 </section>

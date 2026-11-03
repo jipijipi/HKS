@@ -19,6 +19,10 @@
     <form action="https://api.web3forms.com/submit" method="POST" class="card" data-web3forms id="contact-form">
       <input type="hidden" name="access_key" value="88cd8887-bf7e-4aeb-a6bd-b9e541b6d2fb" />
       <input type="hidden" name="subject" value="Nouvelle demande — Résidence Courlis" />
+      <div class="contact__unit" data-contact-unit hidden>
+        <label>Bien concerné<br /><input type="text" name="bien" readonly /></label>
+        <button type="button" class="contact__clear-unit" data-clear-unit>Retirer la sélection</button>
+      </div>
       <label>
         Nom complet<br />
         <input type="text" name="name" required />
@@ -35,7 +39,7 @@
         Ne pas remplir<br />
         <input type="text" name="botcheck" tabindex="-1" autocomplete="off" />
       </label>
-      <button class="btn btn--primary" type="submit">Envoyer</button>
+      <button class="btn btn--primary" type="submit">Envoyer <span aria-hidden="true">↗</span></button>
       <p class="form-status" data-form-status aria-live="polite"></p>
     </form>
   </div>

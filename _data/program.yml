@@ -11,5 +11,5 @@ stats:
     description: Entrée indépendante, contrôle d’accès électronique, flexibilité d’aménagement pour équipes agiles.
   - value: 2
     label: Locaux commerciaux
-    target: "#retail/retail-corner-r1"
+    target: "#retail/retail-r1"
     description: Vitrines sur rue à fort passage, liaison optionnelle vers les bureaux mitoyens pour formats showroom.
