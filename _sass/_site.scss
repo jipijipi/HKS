@@ -955,7 +955,6 @@ textarea:focus {
   img { display: block; width: 100%; height: min(65dvh, 680px); object-fit: contain; }
   iframe { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; max-height: 65dvh; border: 0; }
 }
-.unit-viewer__fallback { display: block; padding: 0.4rem; text-align: center; font-size: 0.72rem; text-decoration: underline; }
 .unit-viewer__navigation { margin-top: 0.8rem; text-align: center; }
 .unit-gallery button:focus-visible, .unit-viewer button:focus-visible, .visual-disclaimer summary:focus-visible { outline: 3px solid $accent; outline-offset: 3px; }
 .interior-lightbox .visual-disclaimer { color: rgba(255,255,255,0.8); }

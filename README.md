@@ -65,10 +65,16 @@ then review the new exports before discarding the previous ones.
 `_data/unit_media.json` defines the ordered images, French captions and optional
 `vimeo` video ID for each gallery. The first photo is the cover. For additional
 videos, add `"vimeo": "YOUR_VIDEO_ID"` to the matching gallery entry, following
-the apartment A example. Embedding must be permitted in the video's Vimeo settings.
+the apartment A example. Start times are supported: `"vimeo": "1242771672#t=22"`
+starts at 22 seconds, and `#t=1m22s` starts at 1 minute 22 seconds. Existing query
+parameters such as `?h=PRIVATE_HASH` are preserved. Use the ID with optional parameters,
+not the full Vimeo URL. Embedding must be permitted in the video's Vimeo settings.
 
 Gallery images load when their unit is visible. Full-size JPEGs and Vimeo players
 load only when opened; closing the viewer removes the player and stops playback.
+When a video exists, the cover launches it and the video is first in the viewer.
+Selecting a photo thumbnail changes the cover back to a photo enlargement.
+Video playback starts on opening, subject to the browser's autoplay restrictions.
 Title, author and portrait are requested hidden, with standard playback controls
 retained. Vimeo may limit appearance customization depending on the account plan.
 The shared disclaimer lives in `_includes/visual-disclaimer.html`.

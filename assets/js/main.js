@@ -310,18 +310,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const item = items[index];
     if (item.video) {
       const frame = document.createElement("iframe");
-      frame.src = `https://player.vimeo.com/video/${item.video}?title=0&byline=0&portrait=0&badge=0&dnt=1&controls=1&playsinline=1`;
+      // URL keeps playback options before the time fragment (e.g. #t=22s).
+      const url = new URL(`https://player.vimeo.com/video/${item.video}`);
+      Object.entries({ title: 0, byline: 0, portrait: 0, badge: 0, dnt: 1,
+        controls: 1, playsinline: 1, autoplay: 1 }).forEach(([key, value]) => {
+        url.searchParams.set(key, value);
+      });
+      if (/^#t=\d+$/.test(url.hash)) url.hash += "s";
+      frame.src = url.href;
       frame.title = `Vidéo — ${activeGallery.dataset.title}`;
-      frame.allow = "fullscreen; picture-in-picture";
+      frame.allow = "autoplay; fullscreen; picture-in-picture";
       frame.allowFullscreen = true;
       stage.append(frame);
-      const fallback = document.createElement("a");
-      fallback.href = `https://vimeo.com/${item.video}`;
-      fallback.target = "_blank";
-      fallback.rel = "noopener";
-      fallback.textContent = "Ouvrir la vidéo sur Vimeo ↗";
-      fallback.className = "unit-viewer__fallback";
-      stage.append(fallback);
     } else {
       const image = document.createElement("img");
       image.src = item.full;
@@ -339,7 +339,7 @@ document.addEventListener("DOMContentLoaded", () => {
     activeGallery = gallery;
     items = Array.from(gallery.querySelectorAll("[data-gallery-photo]"), button => ({ ...button.dataset }));
     const video = gallery.querySelector("[data-gallery-video]");
-    if (video) items.push({ video: video.dataset.galleryVideo, caption: "Visite en vidéo" });
+    if (video) items.unshift({ video: video.dataset.galleryVideo, caption: "Visite en vidéo" });
     index = selectedIndex;
     returnFocus = trigger;
     viewer.querySelector("#unit-viewer-title").textContent = gallery.dataset.title;
@@ -390,10 +390,14 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("[data-unit-gallery]").forEach(gallery => {
     observer.observe(gallery);
     let selectedIndex = 0;
+    const hasVideo = Boolean(gallery.querySelector("[data-gallery-video]"));
+    const hero = gallery.querySelector("[data-gallery-open]");
     const photos = Array.from(gallery.querySelectorAll("[data-gallery-photo]"));
     photos.forEach((button, photoIndex) => {
       button.addEventListener("click", () => {
-        selectedIndex = photoIndex;
+        selectedIndex = photoIndex + (hasVideo ? 1 : 0);
+        hero.setAttribute("aria-label", `Agrandir les visuels de ${gallery.dataset.title}`);
+        gallery.querySelector("[data-gallery-action]").textContent = "Agrandir ↗";
         const cover = gallery.querySelector("[data-gallery-cover]");
         cover.src = button.dataset.medium;
         cover.removeAttribute("data-src");
@@ -406,10 +410,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
     });
-    const hero = gallery.querySelector("[data-gallery-open]");
     hero.addEventListener("click", () => open(gallery, selectedIndex, hero));
     gallery.querySelectorAll("[data-gallery-video]").forEach(video => {
-      video.addEventListener("click", () => open(gallery, photos.length, video));
+      video.addEventListener("click", () => open(gallery, 0, video));
     });
   });
 });
