@@ -49,6 +49,31 @@ document.addEventListener("DOMContentLoaded", () => {
     const panels = browser.querySelectorAll("[data-unit-panel]");
     const unitChips = browser.querySelectorAll("[data-unit-chip]");
     const unitCards = browser.querySelectorAll("[data-unit-card]");
+    const previousUnit = browser.querySelector("[data-unit-previous]");
+    const nextUnit = browser.querySelector("[data-unit-next]");
+    const allChips = Array.from(unitChips);
+    let activeIndex = 0;
+
+    const categoryLabel = (id) => id === "residences" ? "Appartements" :
+      browser.querySelector(`[data-unit-category="${id}"] .unit-browser__filter-label`).textContent.trim();
+    const unitName = (chip) => chip.querySelector(".unit-chip__name").textContent.trim();
+    const syncNavigation = (categoryId, unitId) => {
+      const chips = allChips.filter(chip => chip.dataset.category === categoryId);
+      activeIndex = allChips.findIndex(chip => chip.dataset.category === categoryId && chip.dataset.unit === unitId);
+      const localIndex = chips.findIndex(chip => chip.dataset.unit === unitId);
+      browser.querySelector("[data-unit-position]").textContent = `${categoryLabel(categoryId)} · ${localIndex + 1} sur ${chips.length}`;
+      [previousUnit, nextUnit].forEach((button, direction) => {
+        const chip = allChips[activeIndex + (direction ? 1 : -1)];
+        button.disabled = !chip;
+        if (!chip) {
+          button.textContent = direction ? "Dernier espace" : "Premier espace";
+          return;
+        }
+        const label = chip.dataset.category !== categoryId
+          ? `Découvrir : ${categoryLabel(chip.dataset.category)}` : unitName(chip);
+        button.textContent = direction ? `${label} →` : `← ${label}`;
+      });
+    };
 
     const setHash = (categoryId, unitId) => {
       const newHash = encodeHash(categoryId, unitId);
@@ -76,6 +101,8 @@ document.addEventListener("DOMContentLoaded", () => {
         card.setAttribute("aria-hidden", isActive ? "false" : "true");
         card.setAttribute("tabindex", isActive ? "0" : "-1");
       });
+
+      syncNavigation(categoryId, unitId);
 
       if (updateHash && categoryId && unitId) {
         setHash(categoryId, unitId);
@@ -128,6 +155,24 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
     };
+
+    const revealUnit = (focus = false) => {
+      requestAnimationFrame(() => {
+        const card = browser.querySelector('[data-unit-card].is-active');
+        if (!card) return;
+        if (focus) card.focus({ preventScroll: true });
+        card.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth", block: "start" });
+      });
+    };
+    [previousUnit, nextUnit].forEach((button, direction) => {
+      button.addEventListener("click", () => {
+        const target = allChips[activeIndex + (direction ? 1 : -1)];
+        if (!target) return;
+        activateCategory(target.dataset.category, { unitId: target.dataset.unit });
+        revealUnit(true);
+      });
+    });
+    browser.querySelector("[data-unit-pagination]").hidden = false;
 
     categoryButtons.forEach((btn) => {
       btn.addEventListener("click", () => {

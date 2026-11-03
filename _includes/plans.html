@@ -11,8 +11,9 @@
     <p>Plans dédiés par typologie en cours de finalisation — prévenez-nous si vous souhaitez une priorité.</p>
   </div> -->
   <div class="unit-browser" data-unit-browser id="plans" tabindex="-1">
-    <div class="unit-browser__filters" role="tablist">
-      {% assign categories = site.data.units.categories %}
+    {% assign categories = site.data.units.categories %}
+    <p class="unit-browser__prompt" id="unit-category-prompt">Quel espace recherchez-vous ?</p>
+    <div class="unit-browser__filters" role="tablist" aria-labelledby="unit-category-prompt">
       {% for category in categories %}
         <button
           class="unit-browser__filter{% if forloop.first %} is-active{% endif %}"
@@ -33,7 +34,8 @@
         data-unit-panel="{{ category.id }}"
         role="tabpanel"
       >
-        <div class="unit-chips" role="tablist">
+        <p class="unit-browser__prompt" id="unit-config-{{ category.id }}">Choisissez une configuration</p>
+        <div class="unit-chips" role="tablist" aria-labelledby="unit-config-{{ category.id }}">
           {% for unit in units %}
             {% assign unit_id = unit.name | slugify: 'ascii' %}
             <button
@@ -129,6 +131,11 @@
         {% endfor %}
       </div>
     {% endfor %}
+    <nav class="unit-pagination" aria-label="Parcourir les espaces" data-unit-pagination hidden>
+      <button type="button" data-unit-previous></button>
+      <span class="unit-pagination__position" data-unit-position aria-live="polite" aria-atomic="true"></span>
+      <button type="button" data-unit-next></button>
+    </nav>
   </div>
   {% include unit-viewer.html %}
 </section>
