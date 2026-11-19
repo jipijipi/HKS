@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ page.title | default: site.title }}</title>
+    <link rel="preload" as="image" href="{{ "/photos/facade02.jpg" | relative_url }}" fetchpriority="high" />
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
     <style>
       :root {
@@ -25,7 +25,7 @@
     <footer class="footer">
       <div class="container footer__inner">
         <div class="footer__brand">
-          <img class="footer__logo" src="{{ '/photos/logo-courlis-w.svg' | relative_url }}" alt="Logo Résidence LE 25" />
+          <img class="footer__logo" src="{{ '/photos/logo-courlis-w.svg' | relative_url }}" alt="Logo Résidence LE 25" width="490" height="490" loading="lazy" />
           <p>© Sicorep Immobilier — Casablanca, Maroc</p>
         </div>
         <p class="footer__links">

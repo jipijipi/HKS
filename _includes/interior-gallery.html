@@ -17,6 +17,8 @@
         <img
           src="{{ item.thumb | relative_url }}"
           alt="{{ item.alt }}"
+          width="{{ site.data.image_dimensions[item.thumb].width }}"
+          height="{{ site.data.image_dimensions[item.thumb].height }}"
           loading="lazy"
           decoding="async"
         />

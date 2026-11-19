@@ -1,0 +1,11 @@
+<section class="section container faq" aria-labelledby="faq-title">
+  <div class="section__header">
+    <h2 class="section__title" id="faq-title">Vos questions sur la Résidence LE 25</h2>
+  </div>
+  {% for item in site.data.faq %}
+    <details class="faq__item">
+      <summary>{{ item.question | escape }}</summary>
+      <p>{{ item.answer | escape }}</p>
+    </details>
+  {% endfor %}
+</section>

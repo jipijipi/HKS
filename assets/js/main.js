@@ -450,18 +450,7 @@ document.addEventListener("DOMContentLoaded", () => {
     touchX = null;
   }, { passive: true });
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      entry.target.querySelectorAll("img[data-src]").forEach(image => {
-        image.src = image.dataset.src;
-        delete image.dataset.src;
-      });
-      observer.unobserve(entry.target);
-    });
-  }, { rootMargin: "200px" });
   document.querySelectorAll("[data-unit-gallery]").forEach(gallery => {
-    observer.observe(gallery);
     let selectedIndex = 0;
     const hasVideo = Boolean(gallery.querySelector("[data-gallery-video]"));
     const hero = gallery.querySelector("[data-gallery-open]");

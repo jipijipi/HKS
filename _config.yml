@@ -1,12 +1,18 @@
-title: "Rue des Courlis"
+title: "Résidence LE 25"
 baseurl: "" # /HKS if GitHub Pages repo path; set to "" when using a custom domain
-url: ""
+url: "https://sicorepimo.com"
 lang: fr
 exclude:
   - photos/units-originals
   - scripts
   - README.md
-description: "Résidences meublées, bureaux et commerces au cœur de Casablanca."
+  - site.md
+  - ressources
+  - Gemfile
+  - Gemfile.lock
+description: "Appartements et studios meublés haut standing à Casablanca, quartier Riviera–Oasis, proche CFC. Parking privatif, sécurité 24h/24 et terrasses selon les biens."
+image: /photos/facade02.jpg
+logo: /photos/logo-courlis-w.svg
 collections:
   pages:
     output: true
@@ -17,6 +23,7 @@ defaults:
       layout: default
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 markdown: kramdown
 sass:
   style: compressed
