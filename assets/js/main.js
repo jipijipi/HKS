@@ -494,7 +494,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const saveData = Boolean(navigator.connection?.saveData);
   let userPaused = false;
   let visible = true;
-  let ready = document.readyState === "complete";
+  let ready = false;
   let failed = false;
   let playPending = false;
   video.muted = true;
@@ -551,8 +551,20 @@ document.addEventListener("DOMContentLoaded", () => {
       control.hidden = true;
     } else start();
   });
-  if (ready) start();
-  else window.addEventListener("load", () => { ready = true; start(); }, { once: true });
+  // Give initial content a one-second head start, then wait for CPU idle.
+  // No src is assigned until this finishes and the hero is visible.
+  const scheduleVideo = () => {
+    window.setTimeout(() => {
+      const enableVideo = () => { ready = true; start(); };
+      if ("requestIdleCallback" in window) {
+        window.requestIdleCallback(enableVideo, { timeout: 2000 });
+      } else {
+        enableVideo();
+      }
+    }, 1000);
+  };
+  if (document.readyState === "complete") scheduleVideo();
+  else window.addEventListener("load", scheduleVideo, { once: true });
 });
 
 // Keep the unit context visible in the enquiry and preserve any message already drafted.

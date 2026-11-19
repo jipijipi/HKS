@@ -86,7 +86,8 @@ after the hero. The first image occupies the large tile; the other two accompany
 
 Replace `photos/hero-loop.mp4` to update the hero animation. Use a short, silent
 H.264 MP4 with web playback metadata (`-movflags +faststart`). The existing facade
-image remains the fallback. Video loading starts after the page load event, and
+image remains the fallback. Video loading starts at least one second after the page load event, then waits
+for a browser idle callback (with a two-second timeout where supported), and
 the fade begins only when playback starts. Reduced-motion and data-saving settings
 keep the static image. The pause control preserves the visitor's choice, and the
 video pauses when off-screen or when the browser tab is hidden.
