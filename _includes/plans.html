@@ -41,6 +41,7 @@
             <button
               class="unit-chip{% if forloop.first %} is-active{% endif %}"
               data-unit-chip
+              id="unit-tab-{{ category.id }}-{{ unit_id }}"
               data-category="{{ category.id }}"
               data-unit="{{ unit_id }}"
               role="tab"
@@ -57,12 +58,13 @@
         </div>
         {% for unit in units %}
           {% assign unit_id = unit.name | slugify: 'ascii' %}
-          <article
+          <div
             class="plan-card plan-card--single{% if forloop.first %} is-active{% endif %}"
             data-unit-card
             data-category="{{ category.id }}"
             data-unit="{{ unit_id }}"
             id="unit-card-{{ category.id }}-{{ unit_id }}"
+            aria-labelledby="unit-tab-{{ category.id }}-{{ unit_id }}"
             role="tabpanel"
             aria-hidden="{% if forloop.first %}false{% else %}true{% endif %}"
             tabindex="{% if forloop.first %}0{% else %}-1{% endif %}"
@@ -127,7 +129,7 @@
             <div class="plan-card__visit">
               <a class="btn btn--primary" href="#contact" data-unit-visit="{{ unit.name | escape }}" aria-label="Organiser une visite — {{ unit.name | escape }}">Organiser une visite {% include icon.html name='arrow-up-right' %}</a>
             </div>
-          </article>
+          </div>
         {% endfor %}
       </div>
     {% endfor %}

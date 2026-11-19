@@ -14,15 +14,13 @@
         data-alt="{{ item.alt }}"
         aria-label="Voir {{ item.alt }}"
       >
-        <img
-          src="{{ item.thumb | relative_url }}"
-          alt="{{ item.alt }}"
-          width="{{ site.data.image_dimensions[item.thumb].width }}"
-          height="{{ site.data.image_dimensions[item.thumb].height }}"
-          loading="lazy"
-          decoding="async"
-        />
-        <span class="interior-gallery__caption">{{ item.alt }}</span>
+        {% if forloop.first %}
+          {% assign image_sizes = '(max-width: 720px) 90vw, 55vw' %}
+        {% else %}
+          {% assign image_sizes = '(max-width: 720px) 43vw, 28vw' %}
+        {% endif %}
+        {% include responsive-image.html src=item.thumb alt=item.alt sizes=image_sizes %}
+        <span class="interior-gallery__caption" aria-hidden="true">{{ item.alt }}</span>
       </a>
     {% endfor %}
   </div>

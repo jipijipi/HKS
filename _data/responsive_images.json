@@ -1,0 +1,920 @@
+{
+  "/photos/interior/hall-medium.jpg": {
+    "width": 1200,
+    "height": 764,
+    "variants": [
+      {
+        "src": "/photos/interior/hall-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/interior/hall-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/interior/hall-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-a/a-chambre-enfants-medium.jpg": {
+    "width": 1200,
+    "height": 771,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-a/a-chambre-enfants-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-a/a-chambre-enfants-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-a/a-chambre-enfants-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-a/a-chambre-parentale-medium.jpg": {
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-a/a-chambre-parentale-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-a/a-chambre-parentale-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-a/a-chambre-parentale-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-a/a-cuisine-medium.jpg": {
+    "width": 1200,
+    "height": 849,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-a/a-cuisine-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-a/a-cuisine-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-a/a-cuisine-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-a/a-salle-de-bain-medium.jpg": {
+    "width": 1200,
+    "height": 849,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-a/a-salle-de-bain-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-a/a-salle-de-bain-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-a/a-salle-de-bain-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-a/a-salon-01-medium.jpg": {
+    "width": 1200,
+    "height": 848,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-a/a-salon-01-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-a/a-salon-01-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-a/a-salon-01-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-a/a-salon-02-medium.jpg": {
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-a/a-salon-02-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-a/a-salon-02-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-a/a-salon-02-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-a/a-terrasse-medium.jpg": {
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-a/a-terrasse-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-a/a-terrasse-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-a/a-terrasse-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-b/b-chambre-enfants-medium.jpg": {
+    "width": 1200,
+    "height": 903,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-b/b-chambre-enfants-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-b/b-chambre-enfants-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-b/b-chambre-enfants-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-b/b-chambre-parentale-01-medium.jpg": {
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-b/b-chambre-parentale-01-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-b/b-chambre-parentale-01-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-b/b-chambre-parentale-01-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-b/b-chambre-parentale-02-medium.jpg": {
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-b/b-chambre-parentale-02-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-b/b-chambre-parentale-02-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-b/b-chambre-parentale-02-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-b/b-cuisine-medium.jpg": {
+    "width": 1200,
+    "height": 849,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-b/b-cuisine-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-b/b-cuisine-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-b/b-cuisine-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-b/b-salle-de-bain-medium.jpg": {
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-b/b-salle-de-bain-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-b/b-salle-de-bain-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-b/b-salle-de-bain-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-b/b-salon-medium.jpg": {
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-b/b-salon-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-b/b-salon-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-b/b-salon-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-c/c-chambre-enfants-01-medium.jpg": {
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-c/c-chambre-enfants-01-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-c/c-chambre-enfants-01-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-c/c-chambre-enfants-01-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-c/c-chambre-enfants-02-medium.jpg": {
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-c/c-chambre-enfants-02-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-c/c-chambre-enfants-02-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-c/c-chambre-enfants-02-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-c/c-chambre-parentale-01-medium.jpg": {
+    "width": 1200,
+    "height": 849,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-c/c-chambre-parentale-01-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-c/c-chambre-parentale-01-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-c/c-chambre-parentale-01-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-c/c-chambre-parentale-02-medium.jpg": {
+    "width": 1200,
+    "height": 849,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-c/c-chambre-parentale-02-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-c/c-chambre-parentale-02-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-c/c-chambre-parentale-02-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-c/c-cuisine-medium.jpg": {
+    "width": 1200,
+    "height": 849,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-c/c-cuisine-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-c/c-cuisine-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-c/c-cuisine-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-c/c-salle-de-bain-medium.jpg": {
+    "width": 1200,
+    "height": 849,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-c/c-salle-de-bain-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-c/c-salle-de-bain-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-c/c-salle-de-bain-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-c/c-salle-de-bain-parentale-medium.jpg": {
+    "width": 900,
+    "height": 1200,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-c/c-salle-de-bain-parentale-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-c/c-salle-de-bain-parentale-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-c/c-salle-de-bain-parentale-medium-900.webp",
+        "width": 900
+      }
+    ]
+  },
+  "/photos/units/apartment-c/c-salon-medium.jpg": {
+    "width": 1200,
+    "height": 849,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-c/c-salon-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-c/c-salon-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-c/c-salon-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-d/d-chambre-enfants-medium.jpg": {
+    "width": 1200,
+    "height": 771,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-d/d-chambre-enfants-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-d/d-chambre-enfants-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-d/d-chambre-enfants-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-d/d-chambre-parentale-medium.jpg": {
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-d/d-chambre-parentale-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-d/d-chambre-parentale-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-d/d-chambre-parentale-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-d/d-cuisine-medium.jpg": {
+    "width": 1200,
+    "height": 849,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-d/d-cuisine-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-d/d-cuisine-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-d/d-cuisine-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-d/d-salle-de-bain-medium.jpg": {
+    "width": 1200,
+    "height": 848,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-d/d-salle-de-bain-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-d/d-salle-de-bain-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-d/d-salle-de-bain-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-d/d-salle-de-bain-parentale-medium.jpg": {
+    "width": 900,
+    "height": 1200,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-d/d-salle-de-bain-parentale-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-d/d-salle-de-bain-parentale-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-d/d-salle-de-bain-parentale-medium-900.webp",
+        "width": 900
+      }
+    ]
+  },
+  "/photos/units/apartment-d/d-salon-medium.jpg": {
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-d/d-salon-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-d/d-salon-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-d/d-salon-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-e/e-chambre-enfants-medium.jpg": {
+    "width": 1200,
+    "height": 771,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-e/e-chambre-enfants-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-e/e-chambre-enfants-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-e/e-chambre-enfants-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-e/e-chambre-parentale-medium.jpg": {
+    "width": 1200,
+    "height": 849,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-e/e-chambre-parentale-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-e/e-chambre-parentale-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-e/e-chambre-parentale-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-e/e-cuisine-medium.jpg": {
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-e/e-cuisine-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-e/e-cuisine-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-e/e-cuisine-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-e/e-salle-de-bain-medium.jpg": {
+    "width": 1200,
+    "height": 849,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-e/e-salle-de-bain-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-e/e-salle-de-bain-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-e/e-salle-de-bain-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-e/e-salle-de-bain-parentale-medium.jpg": {
+    "width": 900,
+    "height": 1200,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-e/e-salle-de-bain-parentale-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-e/e-salle-de-bain-parentale-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-e/e-salle-de-bain-parentale-medium-900.webp",
+        "width": 900
+      }
+    ]
+  },
+  "/photos/units/apartment-e/e-salon-medium.jpg": {
+    "width": 1200,
+    "height": 849,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-e/e-salon-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-e/e-salon-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-e/e-salon-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-f/f-chambre-01-medium.jpg": {
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-f/f-chambre-01-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-f/f-chambre-01-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-f/f-chambre-01-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-f/f-chambre-02-medium.jpg": {
+    "width": 1200,
+    "height": 771,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-f/f-chambre-02-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-f/f-chambre-02-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-f/f-chambre-02-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-f/f-chambre-parentale-01-medium.jpg": {
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-f/f-chambre-parentale-01-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-f/f-chambre-parentale-01-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-f/f-chambre-parentale-01-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-f/f-chambre-parentale-02-medium.jpg": {
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-f/f-chambre-parentale-02-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-f/f-chambre-parentale-02-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-f/f-chambre-parentale-02-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-f/f-cuisine-medium.jpg": {
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-f/f-cuisine-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-f/f-cuisine-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-f/f-cuisine-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-f/f-salle-de-bain-medium.jpg": {
+    "width": 1200,
+    "height": 901,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-f/f-salle-de-bain-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-f/f-salle-de-bain-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-f/f-salle-de-bain-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-f/f-salle-de-bain-parentale-01-medium.jpg": {
+    "width": 1200,
+    "height": 849,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-f/f-salle-de-bain-parentale-01-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-f/f-salle-de-bain-parentale-01-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-f/f-salle-de-bain-parentale-01-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-f/f-salle-de-bain-parentale-02-medium.jpg": {
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-f/f-salle-de-bain-parentale-02-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-f/f-salle-de-bain-parentale-02-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-f/f-salle-de-bain-parentale-02-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/apartment-f/f-salon-medium.jpg": {
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/photos/units/apartment-f/f-salon-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/apartment-f/f-salon-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/apartment-f/f-salon-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/studio-s1/s1-chambre-medium.jpg": {
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/photos/units/studio-s1/s1-chambre-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/studio-s1/s1-chambre-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/studio-s1/s1-chambre-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/studio-s1/s1-cuisine-medium.jpg": {
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/photos/units/studio-s1/s1-cuisine-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/studio-s1/s1-cuisine-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/studio-s1/s1-cuisine-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/studio-s1/s1-salle-de-bain-medium.jpg": {
+    "width": 1200,
+    "height": 849,
+    "variants": [
+      {
+        "src": "/photos/units/studio-s1/s1-salle-de-bain-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/studio-s1/s1-salle-de-bain-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/studio-s1/s1-salle-de-bain-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/studio-s1/s1-salon-medium.jpg": {
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/photos/units/studio-s1/s1-salon-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/studio-s1/s1-salon-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/studio-s1/s1-salon-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/studio-s2/s2-chambre-medium.jpg": {
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/photos/units/studio-s2/s2-chambre-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/studio-s2/s2-chambre-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/studio-s2/s2-chambre-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/studio-s2/s2-cuisine-medium.jpg": {
+    "width": 1200,
+    "height": 899,
+    "variants": [
+      {
+        "src": "/photos/units/studio-s2/s2-cuisine-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/studio-s2/s2-cuisine-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/studio-s2/s2-cuisine-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/studio-s2/s2-salle-de-bain-medium.jpg": {
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/photos/units/studio-s2/s2-salle-de-bain-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/studio-s2/s2-salle-de-bain-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/studio-s2/s2-salle-de-bain-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "/photos/units/studio-s2/s2-salon-medium.jpg": {
+    "width": 1200,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/photos/units/studio-s2/s2-salon-medium-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/photos/units/studio-s2/s2-salon-medium-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/photos/units/studio-s2/s2-salon-medium-1200.webp",
+        "width": 1200
+      }
+    ]
+  }
+}

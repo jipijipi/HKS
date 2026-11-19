@@ -3,11 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preload" as="image" href="{{ "/photos/facade02.jpg" | relative_url }}" fetchpriority="high" />
+    <link rel="preload" as="image" type="image/webp" href="{{ "/photos/facade02.webp" | relative_url }}" fetchpriority="high" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&amp;family=Poiret+One&amp;family=Work+Sans:wght@300;400;600&amp;display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&amp;family=Poiret+One&amp;family=Work+Sans:wght@300;400;600&amp;display=swap" /></noscript>
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
     <style>
       :root {
         --hero-bg-image: url("{{ '/photos/facade02.jpg' | relative_url }}");
+        --hero-bg-image: image-set(url("{{ '/photos/facade02.webp' | relative_url }}") type("image/webp"), url("{{ '/photos/facade02.jpg' | relative_url }}") type("image/jpeg"));
       }
     </style>
     <link rel="icon" type="image/svg+xml" href="{{ '/assets/icons/favicon.svg' | relative_url }}" />

@@ -90,3 +90,16 @@ image remains the fallback. Video loading starts after the page load event, and
 the fade begins only when playback starts. Reduced-motion and data-saving settings
 keep the static image. The pause control preserves the visitor's choice, and the
 video pauses when off-screen or when the browser tab is hidden.
+
+## Responsive display images
+
+After preparing or replacing gallery JPEGs, regenerate the WebP display sizes:
+
+```sh
+python3 scripts/prepare-responsive-images.py
+```
+
+Requires ImageMagick. This writes 480/800/1200-pixel variants (without upscaling),
+`photos/facade02.webp`, and `_data/responsive_images.json`. Commit those outputs
+together. Original JPEGs remain available for full-screen viewing. Gallery
+selection updates the responsive source set as well as the cover image.

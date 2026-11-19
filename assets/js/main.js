@@ -465,6 +465,8 @@ document.addEventListener("DOMContentLoaded", () => {
         setControlLabel(action, "Agrandir", "arrow-up-right");
         action.hidden = false;
         const cover = gallery.querySelector("[data-gallery-cover]");
+        if (button.dataset.srcset) cover.srcset = button.dataset.srcset;
+        else cover.removeAttribute("srcset");
         cover.src = button.dataset.medium;
         cover.removeAttribute("data-src");
         cover.alt = `${button.dataset.caption} — rendu d’illustration`;
@@ -494,6 +496,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let visible = true;
   let ready = document.readyState === "complete";
   let failed = false;
+  let playPending = false;
   video.muted = true;
 
   const updateControl = () => {
@@ -504,9 +507,14 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!ready || failed || reducedMotion.matches || saveData || userPaused || !visible || document.hidden) return;
     if (!video.hasAttribute("src")) video.src = video.dataset.src;
     control.hidden = false;
+    if (playPending || !video.paused) return;
+    playPending = true;
     video.play().catch(() => {
-      video.classList.remove("is-playing");
+      // An off-screen pause can reject an earlier play request. Keep any
+      // already-rendered frame visible instead of fading back to the facade.
       updateControl();
+    }).finally(() => {
+      playPending = false;
     });
   };
   video.addEventListener("playing", () => {
