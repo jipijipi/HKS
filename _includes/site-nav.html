@@ -1,0 +1,12 @@
+<header class="site-header is-over-hero" data-floating-nav>
+  <nav class="container site-nav" aria-label="Navigation principale">
+    <a class="site-nav__brand" href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>LE 25</a>
+    <div class="site-nav__links">
+      {% for entry in site.data.property_pages %}
+        {% assign destination = '/' | append: entry.slug | append: '/' %}
+        <a href="{{ destination | relative_url }}" {% if page.category == entry.category %}aria-current="page"{% endif %}>{{ entry.label }}</a>
+      {% endfor %}
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>

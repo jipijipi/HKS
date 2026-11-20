@@ -1,0 +1,61 @@
+{% assign unit = include.unit %}
+{% assign category = include.category %}
+{% assign bureau_prefix = '/bureaux/' | relative_url | append: '#' %}
+{% assign retail_prefix = '/commerces/' | relative_url | append: '#' %}
+            <span class="plan-card__tag">{{ category.label }}</span>
+            <{{ include.heading | default: "h3" }} class="plan-card__title">{{ unit.name }}</{{ include.heading | default: "h3" }}>
+            {% if unit.media %}{% include unit-gallery.html unit=unit %}{% endif %}
+            <div class="plan-card__metrics">
+              {% if unit.surface %}
+                <span class="plan-card__metric plan-card__metric--surface">{{ unit.surface }}</span>
+              {% endif %}
+              {% if unit.highlights %}
+                <ul class="plan-card__highlights">
+                  {% for item in unit.highlights %}
+                    <li>{{ item }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </div>
+            {% if unit.amenities %}
+              <div class="plan-card__amenities" role="list">
+                {% for amenity in unit.amenities %}
+                  {% assign label = amenity.label | default: amenity[0] %}
+                  {% assign value = amenity.value | default: amenity[1] %}
+                  <div class="plan-card__amenity" role="listitem">
+                    <span class="plan-card__amenity-icon" aria-hidden="true">✓</span>
+                    <div class="plan-card__amenity-content">
+                      <span class="plan-card__amenity-label">{{ label }}</span>
+                      <span class="plan-card__amenity-value">{{ value }}</span>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            {% endif %}
+            <div class="plan-card__previews">
+              <div class="plan-card__preview{% if unit.preview %} has-image{% endif %}">
+                {% if unit.preview %}
+                  {% if unit.plan_url %}<a class="plan-card__download" href="{{ unit.plan_url | relative_url }}" download aria-label="Télécharger le plan PDF — {{ unit.name | escape }}">{% endif %}
+                  <img src="{{ unit.preview | relative_url }}" alt="Plan {{ unit.name }}" width="{{ site.data.image_dimensions[unit.preview].width }}" height="{{ site.data.image_dimensions[unit.preview].height }}" loading="lazy" />
+                  {% if unit.plan_url %}</a>{% endif %}
+                {% else %}
+                  Aperçu plan à intégrer
+                {% endif %}
+              </div>
+              {% if unit.floor_preview %}
+                <div class="plan-card__preview has-image">
+                  {% if unit.plan_url %}<a class="plan-card__download" href="{{ unit.plan_url | relative_url }}" download aria-label="Télécharger le plan PDF — {{ unit.name | escape }}, rez-de-chaussée">{% endif %}
+                  <img src="{{ unit.floor_preview | relative_url }}" alt="Plan {{ unit.name }} - rez-de-chaussée" width="{{ site.data.image_dimensions[unit.floor_preview].width }}" height="{{ site.data.image_dimensions[unit.floor_preview].height }}" loading="lazy" />
+                  {% if unit.plan_url %}</a>{% endif %}
+                </div>
+              {% endif %}
+            </div>
+            {% if unit.plan_url %}
+              <a class="plan-card__cta" href="{{ unit.plan_url | relative_url }}" target="_blank" rel="noopener">Voir le plan PDF</a>
+            {% endif %}
+            {% if unit.note %}
+              <p class="plan-card__note">{% if page.category %}{{ unit.note | replace: '#offices/', bureau_prefix | replace: '#retail/', retail_prefix }}{% else %}{{ unit.note }}{% endif %}</p>
+            {% endif %}
+            <div class="plan-card__visit">
+              <a class="btn btn--primary" href="#contact" data-unit-visit="{{ unit.name | escape }}" aria-label="Organiser une visite — {{ unit.name | escape }}">Organiser une visite {% include icon.html name='arrow-up-right' %}</a>
+            </div>

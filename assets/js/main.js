@@ -601,3 +601,43 @@ document.addEventListener("DOMContentLoaded", () => {
   form.querySelector("[data-clear-unit]").addEventListener("click", clear);
   form.addEventListener("reset", () => { context.hidden = true; suggestedMessage = ""; });
 });
+
+// Floating links stay out of the way on descent and return on upward scroll.
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector("[data-floating-nav]");
+  if (!header) return;
+  let previousY = Math.max(0, window.scrollY);
+  let travel = 0;
+  let ticking = false;
+  const update = () => {
+    const y = Math.max(0, window.scrollY);
+    const delta = y - previousY;
+    previousY = y;
+    ticking = false;
+    const hero = document.querySelector(".hero");
+    header.classList.toggle("is-over-hero", Boolean(hero && hero.getBoundingClientRect().bottom > 100));
+    // A mouse click leaves links focused; only keyboard focus should pin the nav.
+    if (y <= 40 || header.querySelector(":focus-visible")) {
+      header.classList.remove("is-hidden");
+      travel = 0;
+      return;
+    }
+    if (Math.sign(delta) !== Math.sign(travel)) travel = 0;
+    travel += delta;
+    if (Math.abs(travel) >= 12) {
+      header.classList.toggle("is-hidden", travel > 0);
+      travel = 0;
+    }
+  };
+  window.addEventListener("scroll", () => {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(update);
+  }, { passive: true });
+  header.addEventListener("focusin", (event) => {
+    if (!event.target.matches(":focus-visible")) return;
+    header.classList.remove("is-hidden");
+    travel = 0;
+  });
+  update();
+});

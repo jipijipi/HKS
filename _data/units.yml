@@ -1,7 +1,7 @@
 categories:
   - id: residences
     label: Résidences
-    description: Appartements pensés pour les séjours moyenne et longue durée.
+    description: Appartements de deux ou trois chambres, avec terrasse selon configuration.
   - id: studios
     label: Studios
     description: Espaces compacts optimisés, idéals pour jeunes actifs et consultants.

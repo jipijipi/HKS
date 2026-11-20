@@ -1,0 +1,42 @@
+---
+layout: default
+---
+{% assign overview = site.data.property_pages | where: 'category', page.category | first %}
+{% assign category = site.data.units.categories | where: 'id', page.category | first %}
+{% assign units = site.data.units.units | where: 'category', page.category %}
+<section class="hero hero--category" aria-labelledby="category-title">
+  <div class="container category-hero__content">
+    <p class="eyebrow">Résidence LE 25 · Rue des Courlis</p>
+    <h1 class="hero__title" id="category-title">{{ overview.label }} à Casablanca</h1>
+    <p class="hero__subtitle">Riviera–Oasis · proche Casablanca Finance City</p>
+    <a class="btn btn--ghost" href="#configurations">Découvrir les espaces {% include icon.html name='arrow-right' %}</a>
+  </div>
+</section>
+<section class="container category-intro" aria-labelledby="category-intro-title">
+  <h2 class="section__title" id="category-intro-title">Votre projet à Riviera–Oasis</h2>
+  <p class="category-intro__lead">{{ overview.intro }}</p>
+  <p>{{ overview.details }}</p>
+  {% include commercial-note.html %}
+  <a class="btn btn--primary" href="#contact">Parlons de votre projet {% include icon.html name='arrow-up-right' %}</a>
+</section>
+<section id="configurations" class="container category-properties" aria-label="Configurations {{ overview.label | downcase }}">
+  <nav class="unit-jump-nav" aria-labelledby="unit-jump-title">
+    <p id="unit-jump-title" class="unit-jump-nav__title">Accéder à une configuration</p>
+    <ul>
+      {% for unit in units %}
+        {% assign unit_id = unit.name | slugify: 'ascii' %}
+        <li><a href="#{{ unit_id }}">{{ unit.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+  {% for unit in units %}
+    {% assign unit_id = unit.name | slugify: 'ascii' %}
+    <article class="plan-card category-property" id="{{ unit_id }}">
+      {% include unit-details.html unit=unit category=category heading='h2' %}
+      <a class="unit-jump-back" href="#configurations">Retour aux configurations ↑</a>
+    </article>
+  {% endfor %}
+</section>
+{% include unit-viewer.html %}
+{% include location.html %}
+{% include contact.html %}

@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "appartements",
+    "category": "residences",
+    "label": "Appartements",
+    "title": "Appartements haut standing à Casablanca Riviera–Oasis",
+    "description": "Découvrez les appartements de 2 ou 3 chambres de la Résidence LE 25 à Casablanca Riviera–Oasis, proche CFC : surfaces, terrasses, équipements et plans.",
+    "intro": "Sur la rue des Courlis, les appartements de la Résidence LE 25 associent une inspiration Art Déco au confort d’un quartier résidentiel de Casablanca. Comparez six configurations de deux ou trois chambres, avec terrasse selon le bien, à proximité de Casablanca Finance City (CFC) et d’Anfa Park.",
+    "details": "Les surfaces intérieures vont de 66,30 à 102,50 m². Les types A, B et F disposent de terrasses dont la surface est indiquée séparément. Les fiches précisent les cuisines, les salles de bain, la climatisation individuelle, le double vitrage et le stationnement. Les visuels illustrent des possibilités d’aménagement ; le mobilier et les prestations proposés sont à confirmer avec Sicorep Immobilier."
+  },
+  {
+    "slug": "studios",
+    "category": "studios",
+    "label": "Studios",
+    "title": "Studios haut standing à Casablanca Riviera–Oasis",
+    "description": "Studios avec terrasse à Casablanca Riviera–Oasis, proche CFC : découvrez les configurations S1 et S2, leurs surfaces, équipements et plans à la Résidence LE 25.",
+    "intro": "Un espace personnel avec une chambre, un séjour et une terrasse, dans le quartier Riviera–Oasis de Casablanca. Les studios de la Résidence LE 25 sont une option à étudier pour votre projet résidentiel à proximité de Casablanca Finance City (CFC).",
+    "details": "Le Studio Urbain S1 propose 54 m² intérieurs et une terrasse de 7,50 m². Le Studio Signature S2 offre 70,20 m² intérieurs et une terrasse de 6,90 m². Chaque configuration comprend une kitchenette équipée, une climatisation individuelle et une place de parking privative en sous-sol. Consultez les plans pour apprécier la distribution des pièces et contactez-nous pour préciser le mobilier proposé."
+  },
+  {
+    "slug": "bureaux",
+    "category": "offices",
+    "label": "Bureaux",
+    "title": "Bureaux à Casablanca Riviera–Oasis, proche CFC",
+    "description": "Cinq plateaux de bureaux à Casablanca Riviera–Oasis : accès indépendant, surfaces et plans, possibilités de liaison. Découvrez les espaces de la Résidence LE 25.",
+    "intro": "Installez votre projet professionnel rue des Courlis, dans le quartier Riviera–Oasis de Casablanca. La Résidence LE 25 propose cinq plateaux de bureaux avec une entrée indépendante, à proximité du quartier d’affaires de Casablanca Finance City (CFC).",
+    "details": "Les surfaces indiquées vont de 36,50 à 123,40 m², avec des possibilités de mezzanine à préciser selon le plateau. Certaines configurations peuvent communiquer entre elles ou avec les commerces en rez-de-chaussée. Consultez les plans et faites confirmer les surfaces, les aménagements possibles, le stationnement et les conditions commerciales avant de définir votre implantation."
+  },
+  {
+    "slug": "commerces",
+    "category": "retail",
+    "label": "Commerces",
+    "title": "Locaux commerciaux à Casablanca Riviera–Oasis",
+    "description": "Deux locaux commerciaux rue des Courlis à Casablanca Riviera–Oasis, avec mezzanines et liaisons possibles vers les bureaux. Surfaces et plans à consulter.",
+    "intro": "Vous recherchez un local pour votre activité à Casablanca Riviera–Oasis ? Découvrez les deux espaces commerciaux de la Résidence LE 25, sur la rue des Courlis, et leurs possibilités de liaison avec les bureaux du programme.",
+    "details": "Le local R1 présente 43,40 m² et une mezzanine de 21,50 m² ; le local R2, 35,70 m² et une mezzanine de 17,50 m². Les plans détaillent leur configuration et les connexions envisagées avec les plateaux de bureaux. Contactez Sicorep Immobilier pour vérifier la compatibilité de votre activité, les aménagements possibles et les conditions proposées."
+  }
+]

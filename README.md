@@ -104,3 +104,16 @@ Requires ImageMagick. This writes 480/800/1200-pixel variants (without upscaling
 `photos/facade02.webp`, and `_data/responsive_images.json`. Commit those outputs
 together. Original JPEGs remain available for full-screen viewing. Gallery
 selection updates the responsive source set as well as the cover image.
+
+## Property category pages
+
+`/appartements/`, `/studios/`, `/bureaux/` and `/commerces/` each show all their
+configurations without requiring category tabs. Page titles/descriptions live in
+the corresponding root HTML file; introductions and navigation labels are in
+`_data/property_pages.json`. Unit details, galleries and plans share the same
+`_data/units.yml` source and `_includes/unit-details.html` as the homepage.
+
+Rental/purchase options remain subject to enquiry. The shared commercial notice
+is `_includes/commercial-note.html`; availability counts stay in the data but
+are not published until they can be confirmed. Jekyll includes the pages in the
+sitemap automatically.
