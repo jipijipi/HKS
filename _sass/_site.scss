@@ -1158,7 +1158,12 @@ textarea:focus {
 
 .unit-jump-nav { width: 100%; max-width: 800px; margin: 0 auto; }
 .unit-jump-nav__title { margin: 0 0 0.75rem; font-size: 0.85rem; color: $primary; font-weight: 600; }
-.unit-jump-nav ul { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; list-style: none; margin: 0; padding: 0; }
-.unit-jump-nav a { display: inline-flex; align-items: center; min-height: 40px; font-size: 0.9rem; color: $accent-text; text-decoration: underline; text-underline-offset: 0.25em; }
+.unit-jump-nav ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); gap: 1rem; list-style: none; margin: 0; padding: 0; }
+.unit-summary { display: grid; height: 100%; gap: 0.65rem; padding: 1rem; border: 1px solid rgba($primary, 0.12); border-radius: 12px; background: white; color: $primary; }
+.unit-summary:hover { border-color: $accent-text; box-shadow: 0 4px 16px rgba($primary, 0.06); }
+.unit-summary__plan { display: grid; place-items: center; aspect-ratio: 3 / 2; }
+.unit-summary__plan img { display: block; width: 100%; height: 100%; max-height: 150px; object-fit: contain; }
+.unit-summary__name { font-size: 0.95rem; font-weight: 600; }
+.unit-summary__features { display: flex; flex-wrap: wrap; gap: 0.2rem 0.8rem; font-size: 0.85rem; color: $body-color; }
 .unit-jump-back { justify-self: start; font-size: 0.8rem; color: $accent-text; padding: 0.5rem 0; text-decoration: underline; text-underline-offset: 0.25em; }
 .unit-jump-nav a:focus-visible, .unit-jump-back:focus-visible { outline: 2px solid $primary; outline-offset: 4px; }

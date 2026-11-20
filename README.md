@@ -117,3 +117,7 @@ Rental/purchase options remain subject to enquiry. The shared commercial notice
 is `_includes/commercial-note.html`; availability counts stay in the data but
 are not published until they can be confirmed. Jekyll includes the pages in the
 sitemap automatically.
+
+After updating plan PNGs, regenerate the summary-card previews with
+`python3 scripts/prepare-plan-thumbnails.py` (ImageMagick required) and commit
+`plans/thumbs/` alongside the source plans.

@@ -21,11 +21,32 @@ layout: default
 </section>
 <section id="configurations" class="container category-properties" aria-label="Configurations {{ overview.label | downcase }}">
   <nav class="unit-jump-nav" aria-labelledby="unit-jump-title">
-    <p id="unit-jump-title" class="unit-jump-nav__title">Accéder à une configuration</p>
+    <p id="unit-jump-title" class="unit-jump-nav__title">Les configurations en un coup d’œil</p>
     <ul>
       {% for unit in units %}
         {% assign unit_id = unit.name | slugify: 'ascii' %}
-        <li><a href="#{{ unit_id }}">{{ unit.name }}</a></li>
+        <li>
+          <a class="unit-summary" href="#{{ unit_id }}">
+            {% if unit.preview %}
+              {% assign summary_plan = unit.preview | replace: '/2x/', '/thumbs/' | replace: '.png', '.webp' %}
+              <span class="unit-summary__plan"><img src="{{ summary_plan | relative_url }}" alt="" width="{{ site.data.image_dimensions[unit.preview].width }}" height="{{ site.data.image_dimensions[unit.preview].height }}" loading="lazy" decoding="async" /></span>
+            {% endif %}
+            <span class="unit-summary__name">{{ unit.name }}</span>
+            <span class="unit-summary__features">
+              {% if page.category == 'residences' or page.category == 'studios' %}
+                <span>{{ unit.surface | split: '+' | first | strip }}</span>
+                {% for feature in unit.highlights %}
+                  {% if feature contains 'chambre' %}
+                    <span>{{ feature | replace: 'Deux', '2' | replace: 'Trois', '3' | replace: 'Une', '1' }}</span>
+                    {% break %}
+                  {% endif %}
+                {% endfor %}
+              {% else %}
+                <span>{{ unit.surface }}</span>
+              {% endif %}
+            </span>
+          </a>
+        </li>
       {% endfor %}
     </ul>
   </nav>
