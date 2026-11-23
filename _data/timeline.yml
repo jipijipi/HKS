@@ -6,4 +6,4 @@ steps:
   - stage: Commercialisation
     copy: Lancement des pré-réservations pour résidences, bureaux et commerces.
   - stage: Livraison
-    copy: Remise des clés estimée prochainement avec accompagnement à l’ameublement.
+    copy: Remise des clés estimée prochainement.

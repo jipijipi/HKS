@@ -4,7 +4,7 @@ Quartier riviera-oasis (habitations, residentiel, tranquile)
 Proximité quartier affaire cfc / Anfa park 
 Proximité des grands axes (direction aeroport,...)
 
-Appartements meublés, tout équipés (dont cuisine) x 14 
+Appartements tout équipés (dont cuisine) x 14 
 Locaux commerciaux x 2
 Bureaux x 5
 

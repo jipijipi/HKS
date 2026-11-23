@@ -10,7 +10,7 @@ exclude:
   - ressources
   - Gemfile
   - Gemfile.lock
-description: "Appartements et studios meublés haut standing à Casablanca, quartier Riviera–Oasis, proche CFC. Parking privatif, sécurité 24h/24 et terrasses selon les biens."
+description: "Appartements et studios haut standing à Casablanca, quartier Riviera–Oasis, proche CFC. Parking privatif, sécurité 24h/24 et terrasses selon les biens."
 image: /photos/facade02.jpg
 logo: /photos/logo-courlis-w.svg
 collections:
